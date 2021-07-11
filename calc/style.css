@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+html {
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  height: 350px;
+  width: 280px;
+  padding: 0px;
+  margin: 0px;
+  overflow-y: hidden;
+}
+
+#grid {
+  display: grid;
+  grid-template-areas: "d d d d"
+                       "clr pm pct div"
+                       "seven eight nine mlt"
+                       "four five six mns"
+                       "one two three pls"
+                       "zero dec eql eql";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 350px;
+  width: 280px;
+}
+
+#display {
+  grid-area: d;
+  text-align: right;
+  background-color: #282a36;
+  color: #50fa7b;
+  border: 1px solid #282a36;
+  padding: 10px;
+}
+#clear {grid-area: clr;}
+#plus-minus {grid-area: pm;}
+#percent {grid-area: pct;}
+#divide {grid-area: div;}
+#seven {grid-area: seven;}
+#eight {grid-area: eight;}
+#nine {grid-area: nine;}
+#multiply {grid-area: mlt;}
+#four {grid-area: four;}
+#five {grid-area: five;}
+#six {grid-area: six;}
+#minus {grid-area: mns;}
+#one {grid-area: one;}
+#two {grid-area: two;}
+#three {grid-area: three;}
+#plus {grid-area: pls;}
+#zero {grid-area: zero;}
+#decimal {grid-area: dec;}
+#equals {grid-area: eql;}
+
+input {
+  width: 100%;
+  height:  100%;
+  text-align: center;
+  border-radius: 0%;
+  border: 1px solid #282a36;
+  color: white;
+  background-color: #44475a;
+  font-size: 25px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#disp {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  text-align: right;
+  font-size: 40px;
+  line-height: 40px;
+  background-color: #282a36;
+  color: #50fa7b;
+  caret-color: transparent;
+  font-family: "Roboto Mono", monospace;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input:hover {
+  opacity: 0.9;
+}
+
+input:active {
+  opacity: 0.8;
+}
+
+input:focus {
+  outline: none;
+}

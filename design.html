@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>TasmanKingsley/designProjects</title>
+</head>
+<body>
+<nav id="sidebar">
+  <a href="javascript:void(0)" onclick="closeSideBar()" style="font-size: 1.5em; padding: 30px;">✕</a>
+  <a href="index.html">Home</a>
+  <a href="code.html">Code</a>
+  <a href="design.html">Design</a>
+  <a href="music.html">Music</a>
+  <a href="about.html">About</a>
+</nav>
+
+<div class="grid">
+  <div class="header">
+    <span>TasmanKingsley/designProjects</span>
+    <a href="javascript:void(0)" onclick="openSideBar()" class="burger">☰</a>
+  </div>
+</div>
+
+<div class="content">
+  <div id="contentDiv">
+    <p>Here you can find an assortment of design related projects and pieces that i have worked on. <br><br>
+    Several of these projects were developed for Uni assignments, others are just personal projects i felt like sharing.</p><br>
+    <p>Jamingle app prototype</p>
+    <iframe class="videoEmbed" width="720" height="450" src="https://www.youtube.com/embed/LU3UbYG4m88"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <p>Persona</p>
+    <img class="persona" src="images/Persona_final.png" alt="">
+    <br><br>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function openSideBar() {
+    document.getElementById('sidebar').style.width = '250px';
+  }
+
+  function closeSideBar() {
+    document.getElementById('sidebar').style.width = '0px';
+  }
+
+  document.getElementById('tetris').focus();
+</script>
+</body>
+</html>

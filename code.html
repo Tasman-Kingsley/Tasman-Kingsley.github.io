@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>TasmanKingsley/codingProjects</title>
+</head>
+<body>
+<nav id="sidebar">
+  <a href="javascript:void(0)" onclick="closeSideBar()" style="font-size: 1.5em; padding: 30px;">✕</a>
+  <a href="index.html">Home</a>
+  <a href="code.html">Code</a>
+  <a href="design.html">Design</a>
+  <a href="music.html">Music</a>
+  <a href="about.html">About</a>
+</nav>
+
+<div class="grid">
+  <div class="header">
+    <span>TasmanKingsley/codingProjects</span>
+    <a href="javascript:void(0)" onclick="openSideBar()" class="burger">☰</a>
+  </div>
+</div>
+
+<div class="content">
+  <div class="webpageDiv">
+    <p>I have built this website - and my projects below - with different combinations of: <br><br>
+    html, css, javascript, jquery, ajax, json, node.js, php, and mysql. <br><br>
+    This website uses a custom node.js server running on a raspberry pi in my living room.<br><br>
+    I have also experimented with turning some webapps into multiplatform desktop apps using electron.js.<br><br>
+    You can find links to these electron apps below, should you wish to try them out. ✌️</p><br>
+    <a href="javascript:void(0)" target="_blank" style="color: white;">Simple calculator</a><br>
+    <iframe src="calc/index.html" width="280px" height="350px" style="border: solid .1em #f8f8f2; margin: auto;">
+    </iframe>
+    <br>
+    <br>
+    <a href="javascript:void(0)" target="_blank" style="color: white;">E-commerce practice website</a><br>
+    <iframe src="IPAssignment/index.html" width="100%" height="865px" style="border: solid .1em #f8f8f2;">
+    </iframe>
+    <br>
+    <br>
+    <a href="javascript:void(0)" target="_blank" style="color: white;">Car-rental practice website</a><br>
+    <iframe src="IPAssignment2/index.html" width="100%" height="865px" style="border: solid .1em #f8f8f2;">
+    </iframe>
+    <br>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function openSideBar() {
+    document.getElementById('sidebar').style.width = '250px';
+  }
+
+  function closeSideBar() {
+    document.getElementById('sidebar').style.width = '0px';
+  }
+
+  document.getElementById('tetris').focus();
+</script>
+</body>
+</html>
