@@ -34,14 +34,14 @@ body {
 	justify-content: space-between;
 }
 
-.header span, .header a {
+.header span {
 	font-family: "Roboto Mono", monospace;
 	font-size: 30px;
 	font-weight: 200;
 	letter-spacing: 5px;
 	line-height: 30px;
 	padding: 25px;
-	color: #282a36;
+	color: #44475a;
 	text-decoration: none;
 }
 
@@ -177,6 +177,19 @@ img {
 
 .closeBtn:hover {
 	opacity: 1;
+}
+
+.burger {
+	position: fixed;
+	right: 0;
+	font-family: "Roboto Mono", monospace;
+	font-size: 30px;
+	font-weight: 200;
+	letter-spacing: 5px;
+	line-height: 30px;
+	padding: 25px;
+	color: #44475a;
+	text-decoration: none;
 }
 
 .burger:hover {
