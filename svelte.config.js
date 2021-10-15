@@ -1,17 +1,16 @@
 // svelte.config.js
 import adapter from '@sveltejs/adapter-static';
 
-const dev = process.env.NODE_ENV === 'development';
 
 export default {
   kit: {
     adapter: adapter({
       // default options are shown
-      pages: 'build',
-      assets: 'build',
+      pages: 'docs',
+      assets: 'docs',
       fallback: null,
 		paths: {
-			base: dev ? '' : '/tasmankingsley.github.io',
+			base: '/tasmankingsley.github.io',
 		},
       appDir: 'internal',
     }),
