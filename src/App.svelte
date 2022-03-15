@@ -71,7 +71,7 @@
 
 <style>
 .nav {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   background-color: #eef9ea;
@@ -79,6 +79,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(5, 1fr);
+  will-change: transform;
 }
 
 @media (min-width: 420px) {
