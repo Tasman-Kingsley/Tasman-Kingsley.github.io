@@ -1,65 +1,134 @@
 <script>
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
+  import { fly } from 'svelte/transition';
+  
+  let y;
+
+  let nav_visible = false;
+
+  function toggle_nav() {
+    nav_visible = !nav_visible;
+  }
+
+
 </script>
 
-<main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
+<svelte:window bind:scrollY={y}/>
 
-  <Counter />
+<div>
+  {#if nav_visible}
+    <div class="nav" in:fly={{x: 400, duration: 800}} out:fly={{x: 400, duration: 800}}>
+      <span class="nav-btn">Home</span>
+      <span class="nav-btn">Code portfolio</span>
+      <span class="nav-btn">Design portfolio</span>
+      <span class="nav-btn">Music</span>
+      <span class="nav-btn">About</span>
+    </div>
+  {/if}
+  
+  <div class="header">
+    <span class="title">Tasman Kingsley</span>
+  </div>
+  <span class="burg" style="color: {y > 14.66 && !nav_visible ? '#fff':'#1e1f29'}"
+    on:click={toggle_nav}>{!nav_visible ? '☰' : '✕'}</span>
+  
+  <div class="content">
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Cupiditate, temporibus ratione deleniti impedit voluptatum 
+      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
+      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
 
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
+      <span>{y}</span>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
-</main>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Cupiditate, temporibus ratione deleniti impedit voluptatum 
+      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
+      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
+        
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Cupiditate, temporibus ratione deleniti impedit voluptatum 
+      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
+      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Cupiditate, temporibus ratione deleniti impedit voluptatum 
+      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
+      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Cupiditate, temporibus ratione deleniti impedit voluptatum 
+      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
+      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Cupiditate, temporibus ratione deleniti impedit voluptatum 
+      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
+      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
+  </div>
+  
+</div>
+
 
 <style>
-  :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+.nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: #eef9ea;
+  color: #1e1f29;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(5, 1fr);
+}
 
-  main {
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto;
+@media (min-width: 420px) {
+  .nav {
+    width: 420px;
+    right: 0;
   }
+}
 
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
+.nav-btn {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 5px solid #eee;
+  cursor: pointer;
+  padding-left: 30px;
+}
 
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
-  }
+.nav-btn:hover {
+  background-color: #eee;
+}
 
-  p {
-    max-width: 14rem;
-    margin: 1rem auto;
-    line-height: 1.35;
-  }
+.header {
+  background-color: #99d2d4;
+  color: #1e1f29;
+  height: 45px;
+  line-height: 45px;
+  font-weight: 300;
+}
 
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
+.title {
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
 
-    p {
-      max-width: none;
-    }
-  }
+.burg {
+  font-size: 2rem;
+  padding-right: 10px;
+  line-height: 38px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.content {
+  margin: 15px;
+}
+
 </style>
