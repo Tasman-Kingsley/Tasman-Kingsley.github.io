@@ -1,15 +1,16 @@
 {
   "name": "tasmankingsley.github.io",
-  "version": "0.0.1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.21",
-    "@sveltejs/kit": "next",
-    "svelte": "^3.42.6"
-  },
-  "type": "module"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "svelte": "^3.44.0",
+    "vite": "^2.8.0"
+  }
 }
