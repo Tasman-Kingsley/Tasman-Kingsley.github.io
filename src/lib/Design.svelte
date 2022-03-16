@@ -3,7 +3,7 @@
 </script>
 
 <div in:fly={{x: -400, duration: 500}}>
-    <img class="persona" src="./Persona_final.png" alt="">
+    <img class="persona" src="./persona-final.png" alt="">
 </div>
 
 <style>
