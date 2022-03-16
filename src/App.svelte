@@ -132,8 +132,9 @@ function toggle(num) {
 }
 
 .content {
-  display: grid;
-  grid-auto-flow: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 15px;
   
 }
