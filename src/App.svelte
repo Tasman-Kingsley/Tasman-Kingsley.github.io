@@ -1,71 +1,72 @@
 <script>
-  import { fly } from 'svelte/transition';
-  
-  let y;
+import Home from './lib/Home.svelte';
+import Code from './lib/Code.svelte';
+import Design from './lib/Design.svelte';
+import Music from './lib/Music.svelte';
+import About from './lib/About.svelte';
+import { fly } from 'svelte/transition';
 
-  let nav_visible = false;
+let nav = [
+  {name: 'Nav', visible: false},
+  {name: 'Tasman Kingsley', visible: true},
+  {name: 'Code projects', visible: false},
+  {name: 'Design portfolio', visible: false},
+  {name: 'Music project', visible: false},
+  {name: 'About', visible: false},
+]
 
-  function toggle_nav() {
-    nav_visible = !nav_visible;
+let y;
+
+let title = nav[1].name;
+
+function toggle_nav() {
+  nav[0].visible = !nav[0].visible;
+}
+
+function toggle(num) {
+  for (let i = 1; i < nav.length - 1; i++) {
+    nav[i].visible = false;
   }
-
-
+  nav[num].visible = true;
+  title = nav[num].name;
+  nav[0].visible = !nav[0].visible;
+}
 </script>
 
 <svelte:window bind:scrollY={y}/>
 
 <div>
-  {#if nav_visible}
-    <div class="nav" in:fly={{x: 400, duration: 800}} out:fly={{x: 400, duration: 800}}>
-      <span class="nav-btn">Home</span>
-      <span class="nav-btn">Code portfolio</span>
-      <span class="nav-btn">Design portfolio</span>
-      <span class="nav-btn">Music</span>
-      <span class="nav-btn">About</span>
+  {#if nav[0].visible}
+    <div class="nav" in:fly={{x: 400, duration: 500}} out:fly={{x: 400, duration: 500}}>
+      <span class="nav-btn" on:click={() => toggle(1)}>Home</span>
+      <span class="nav-btn" on:click={() => toggle(2)}>Code projects</span>
+      <span class="nav-btn" on:click={() => toggle(3)}>Design portfolio</span>
+      <span class="nav-btn" on:click={() => toggle(4)}>Music</span>
+      <span class="nav-btn" on:click={() => toggle(5)}>About</span>
     </div>
   {/if}
   
   <div class="header">
-    <span class="title">Tasman Kingsley</span>
+    <span class="title">{title}</span>
   </div>
-  <span class="burg" style="color: {y > 14.66 && !nav_visible ? '#fff':'#1e1f29'}"
-    on:click={toggle_nav}>{!nav_visible ? '☰' : '✕'}</span>
+
+  <span class="burg" style="color: {y > 14.66 && !nav[0].visible ? '#fff':'#1e1f29'}"
+    on:click={toggle_nav}>{!nav[0].visible ? '☰' : '✕'}</span>
   
   <div class="content">
-    
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Cupiditate, temporibus ratione deleniti impedit voluptatum 
-      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
-      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
-
-      <span>{y}</span>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Cupiditate, temporibus ratione deleniti impedit voluptatum 
-      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
-      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
-        
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Cupiditate, temporibus ratione deleniti impedit voluptatum 
-      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
-      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Cupiditate, temporibus ratione deleniti impedit voluptatum 
-      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
-      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Cupiditate, temporibus ratione deleniti impedit voluptatum 
-      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
-      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Cupiditate, temporibus ratione deleniti impedit voluptatum 
-      incidunt totam nostrum maxime! Nobis nesciunt temporibus nulla, 
-      pariatur aliquid velit. Odit nesciunt quam ipsum magni?</p>
+    <!-- <span>{y}</span> -->
+    {#if nav[1].visible}
+      <Home/>
+    {:else if nav[2].visible}
+      <Code/>
+    {:else if nav[3].visible}
+      <Design/>
+    {:else if nav[4].visible}
+      <Music/>
+    {:else if nav[5].visible}
+      <About/>
+    {/if}
   </div>
-  
 </div>
 
 
@@ -79,13 +80,15 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(5, 1fr);
-  will-change: transform;
 }
 
 @media (min-width: 420px) {
   .nav {
     width: 420px;
     right: 0;
+  }
+  .header {
+    text-align: center;
   }
 }
 
@@ -129,7 +132,9 @@
 }
 
 .content {
+  display: grid;
+  grid-auto-flow: row;
   margin: 15px;
+  
 }
-
 </style>
