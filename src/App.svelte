@@ -76,7 +76,7 @@ function toggle(num) {
   height: 100%;
   width: 100%;
   position: fixed;
-  background-color: #eee;
+  background-color: #b2c6d3;
   background-image: url('./waves.jpeg');
   background-position: center;
   background-repeat: no-repeat;
