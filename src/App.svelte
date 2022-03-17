@@ -38,11 +38,11 @@ function toggle(num) {
 <div>
   {#if nav[0].visible}
     <div class="nav" in:fly={{x: 400, duration: 500}} out:fly={{x: 400, duration: 500}}>
-      <span class="nav-btn" on:click={() => toggle(1)}>Home</span>
-      <span class="nav-btn" on:click={() => toggle(2)}>Code projects</span>
-      <span class="nav-btn" on:click={() => toggle(3)}>Design portfolio</span>
-      <span class="nav-btn" on:click={() => toggle(4)}>Music</span>
-      <span class="nav-btn" on:click={() => toggle(5)}>About</span>
+      <span class="nav-btn" on:click={() => toggle(1)}><span class="btn-txt">Home</span></span>
+      <span class="nav-btn" on:click={() => toggle(2)}><span class="btn-txt">Code projects</span></span>
+      <span class="nav-btn" on:click={() => toggle(3)}><span class="btn-txt">Design portfolio</span></span>
+      <span class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Music</span></span>
+      <span class="nav-btn" on:click={() => toggle(5)}><span class="btn-txt">About</span></span>
     </div>
   {/if}
   
@@ -50,11 +50,12 @@ function toggle(num) {
     <span class="title">{title}</span>
   </div>
 
-  <span class="burg" style="color: {y > 14.66 && !nav[0].visible ? '#fff':'#1e1f29'}"
+  <span class="burg" style="color: {y > 14 && !nav[0].visible ? '#fff' : '#1e1f29'};"
     on:click={toggle_nav}>{!nav[0].visible ? '☰' : '✕'}</span>
+
+    <!-- <span>{y}</span> -->
   
   <div class="content">
-    <!-- <span>{y}</span> -->
     {#if nav[1].visible}
       <Home/>
     {:else if nav[2].visible}
@@ -75,7 +76,11 @@ function toggle(num) {
   height: 100%;
   width: 100%;
   position: fixed;
-  background-color: #eef9ea;
+  background-color: #eee;
+  background-image: url('./waves.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #1e1f29;
   display: grid;
   grid-auto-flow: column;
@@ -106,10 +111,18 @@ function toggle(num) {
 
 .nav-btn:hover {
   background-color: #eee;
+  opacity: 0.9;
+}
+
+.btn-txt {
+  background-color: #eee;
+  padding: 2px;
+  border-radius: 2px;
+  font-size: 1.2rem;
 }
 
 .header {
-  background-color: #99d2d4;
+  background-color: #b2c6d3;
   color: #1e1f29;
   height: 45px;
   line-height: 45px;
@@ -122,9 +135,14 @@ function toggle(num) {
 }
 
 .burg {
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 7px;
   line-height: 38px;
+  background-color: none;
+  border-radius: 2px;
+  opacity: 0.9;
   cursor: pointer;
   position: fixed;
   top: 0;
