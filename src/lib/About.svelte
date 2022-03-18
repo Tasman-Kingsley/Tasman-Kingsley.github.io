@@ -3,7 +3,7 @@
 </script>
 
 <div class="content-div" in:fly={{x: -400, duration: 500}}>
-    <img src="./choco-profile.jpg" alt="">
+    <img src="./images/choco-profile.jpg" alt="">
     <span style="color: #b2c6d3; padding: 20px;">About me</span>
     <p>Hello fellow human! My name is Tasman. <br><br>
     I am an amateur Designer, Developer, and Music Producer.<br><br>

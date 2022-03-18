@@ -3,7 +3,7 @@
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
-    <img class="persona" src="./persona-final.png" alt="">
+    <img class="persona" src="./images/persona-final.png" alt="">
     <div class="grid-content">
         <h2>this project is blah blah..</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 

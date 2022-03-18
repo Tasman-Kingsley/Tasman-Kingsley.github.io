@@ -3,7 +3,7 @@
 </script>
 
 <div in:fly={{x: -400, duration: 500}}>
-    <img id="profile" src="./spotify-profile.jpg" alt="">
+    <img id="profile" src="./images/spotify-profile.jpg" alt="">
     <p>Artist - Tasman Kingsley</p>
     <iframe src="https://open.spotify.com/embed/artist/761DscW9vfSQMmnKEJNHbH"
      frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
