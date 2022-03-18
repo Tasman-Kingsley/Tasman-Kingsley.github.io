@@ -4,6 +4,7 @@ import Code from './lib/Code.svelte';
 import Design from './lib/Design.svelte';
 import Music from './lib/Music.svelte';
 import About from './lib/About.svelte';
+import waves from './assets/waves.jpeg';
 import { fly } from 'svelte/transition';
 
 let nav = [
@@ -37,7 +38,8 @@ function toggle(num) {
 
 <div>
   {#if nav[0].visible}
-    <div class="nav" in:fly={{x: 400, duration: 500}} out:fly={{x: 400, duration: 500}}>
+    <div class="nav" in:fly={{x: 400, duration: 500}} out:fly={{x: 400, duration: 500}}
+    style="background-image: url({waves});">
       <span class="nav-btn" on:click={() => toggle(1)}><span class="btn-txt">Home</span></span>
       <span class="nav-btn" on:click={() => toggle(2)}><span class="btn-txt">Code projects</span></span>
       <span class="nav-btn" on:click={() => toggle(3)}><span class="btn-txt">Design portfolio</span></span>
@@ -77,7 +79,7 @@ function toggle(num) {
   width: 100%;
   position: fixed;
   background-color: #b2c6d3;
-  background-image: url('./waves.jpeg');
+  background-image: url(waves);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
