@@ -3,9 +3,8 @@
 </script>
 
 <div in:fly={{x: -400, duration: 500}}>
-    <p>Hello there, Tasman here. <br> This is my portfolio page.</p>
+    <p>Hello, Tasman here. <br> This is my portfolio page.</p>
     <p>Feel free to potter about, <br> and check out some of my projects if you fancy 😄</p>
-    <p>...or play this little tetris game i made with javascript<br> (click frame, arrows to move and rotate).</p>
 
     <!-- <iframe src="https://tasmankingsley.github.io/tetris/"
     width="380" height="630" style=""></iframe> -->

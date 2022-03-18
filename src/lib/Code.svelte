@@ -6,11 +6,15 @@
     <iframe src="https://tasmankingsley.github.io/podcast-app/" width="350" height="650"></iframe>
 
     <div class="grid-content">
-        <h2>this project is blah blah..</h2>
+        <h2>Podcast catcher webapp</h2>
+        <span><a href="https://tasmankingsley.github.io/podcast-app/">Web link</a></span><br>
+        <span><a href="https://github.com/tasmankingsley/podcast-app">Github repo</a></span>
+        <h3>Description</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
 
+        <h3>Technology stack</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
@@ -19,11 +23,83 @@
     <iframe src="https://tasmankingsley.github.io/todo/" width="350" height="650"></iframe>
 
     <div class="grid-content">
-        <h2>this project is blah blah..</h2>
+        <h2>Minimal to-do list</h2>
+        <span><a href="https://tasmankingsley.github.io/todo/">Web link</a></span><br>
+        <span><a href="https://github.com/tasmankingsley/todo">Github repo</a></span>
+        <h3>Description</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
 
+        <h3>Technology stack</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
+    </div>
+
+    <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="350" height="650"></iframe>
+
+    <div class="grid-content">
+        <h2>Github-style consistency graph</h2>
+        <span><a href="https://tasmankingsley.github.io/consistency-graph/">Web link</a></span><br>
+        <span><a href="https://github.com/tasmankingsley/consistency-graph">Github repo</a></span>
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+
+        <h3>Technology stack</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
+    </div>
+
+    <iframe src="https://tasmankingsley.github.io/tetris/" width="370" height="630"></iframe>
+
+    <div class="grid-content">
+        <h2>Tetris clone</h2>
+        <span><a href="https://tasmankingsley.github.io/tetris/">Web link</a></span><br>
+        <span><a href="https://github.com/tasmankingsley/tetris">Github repo</a></span>
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+
+        <h3>Technology stack</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
+    </div>
+
+    <iframe src="https://tasmankingsley.github.io/new-tab/" width="370" height="630"></iframe>
+
+    <div class="grid-content">
+        <h2>New tab - customisable home page</h2>
+        <span><a href="https://tasmankingsley.github.io/new-tab/">Web link</a></span><br>
+        <span><a href="https://github.com/tasmankingsley/new-tab">Github repo</a></span>
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+
+        <h3>Technology stack</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
+    </div>
+
+    <iframe src="https://tasmankingsley.github.io/psuedo-business/" width="100%" height="630"></iframe>
+
+    <div class="grid-content">
+        <h2>Car rental fake business</h2>
+        <span><a href="https://tasmankingsley.github.io/psuedo-business/">Web link</a></span><br>
+        <span><a href="https://github.com/tasmankingsley/psuedo-business">Github repo</a></span>
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+
+        <h3>Technology stack</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
@@ -45,7 +121,7 @@
 }
 
 iframe {
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 20px;
     margin: auto;
 }
