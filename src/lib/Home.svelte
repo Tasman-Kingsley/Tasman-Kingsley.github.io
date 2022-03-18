@@ -12,8 +12,13 @@
 </div>
 
 <style>
+div {
+    display: grid;
+    grid-auto-flow: row;
+}
 iframe {
     border-radius: 15px; 
     border: none;
+    margin: auto;
 }
 </style>
