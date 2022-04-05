@@ -3,11 +3,11 @@
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
-    <iframe src="https://tasmankingsley.github.io/podcast-app/" width="350" height="650"></iframe>
+    <iframe src="https://pods.netlify.app/" width="350" height="650"></iframe>
 
     <div class="grid-content">
         <h2>Podcast catcher webapp</h2>
-        <span><a href="https://tasmankingsley.github.io/podcast-app/">Web link</a></span><br>
+        <span><a href="https://pods.netlify.app/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/podcast-app">Github repo</a></span>
         <h3>Description</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
