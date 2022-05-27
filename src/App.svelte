@@ -123,16 +123,17 @@ function toggle(num) {
 }
 
 .header {
-  background-color: #b2c6d3;
+  background-color: #eee;
   color: #1e1f29;
-  height: 45px;
-  line-height: 45px;
+  height: 60px;
+  line-height: 60px;
   font-weight: 300;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-left: 10px;
+  float: left;
 }
 
 .burg {
@@ -140,7 +141,7 @@ function toggle(num) {
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 7px;
-  line-height: 38px;
+  line-height: 51px;
   background-color: none;
   border-radius: 2px;
   opacity: 0.9;
