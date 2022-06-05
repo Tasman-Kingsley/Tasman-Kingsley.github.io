@@ -9,7 +9,7 @@
     I am an amateur Interaction Designer, Software Developer, and Music Producer.<br><br>
     Thanks for finding your way to my portfolio page. Be sure to poke around and look at my projects if you'd like.<br><br>
     Also, check out my music if you find yourself curious, i appreciate the time and curiosity.<br><br>
-    You can contact me at <a href="mailto: tasmankingsley@gmail.com" style="color: #d3c7b8;">tasman.kingsley@gmail.com</a></p>
+    You can contact me at <a href="mailto: tasmankingsley@gmail.com" style="color: #d3c7b8;">tasmankingsley@gmail.com</a></p>
 </div>
 
 <style>
