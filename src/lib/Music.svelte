@@ -30,6 +30,7 @@ iframe {
     width: 350px; 
     height: 200px;
     transition: width 1s;
+    border-radius: 15px;
 }
 
 @media (min-width: 750px) {
