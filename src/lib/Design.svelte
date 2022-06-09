@@ -22,9 +22,6 @@
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
     </div>
 
     <iframe src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
