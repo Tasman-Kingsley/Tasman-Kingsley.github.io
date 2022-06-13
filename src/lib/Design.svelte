@@ -10,9 +10,6 @@
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
     
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p><br>
     </div>
 
     <img class="persona" src="./images/Yuna-Persona.png" alt="">
