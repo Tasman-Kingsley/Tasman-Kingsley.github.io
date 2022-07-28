@@ -3,8 +3,8 @@
 </script>
 
 <div in:fly={{x: -400, duration: 500}}>
-    <p>Hello, Tasman here. <br> This is my portfolio page.</p>
-    <p>Feel free to potter about, <br> and check out some of my projects if you fancy 😄</p>
+    <p>Hello, Tasman here. This is my portfolio page.</p>
+    <p>Feel free to potter about and peruse my projects if you feel like it 😁</p>
 
     <!-- <iframe src="https://tasmankingsley.github.io/tetris/"
     width="380" height="630" style=""></iframe> -->
@@ -17,8 +17,9 @@ div {
     grid-auto-flow: row;
 }
 iframe {
-    border-radius: 15px; 
+    border-radius: 50%; 
     border: none;
     margin: auto;
+    margin-top: 80px;
 }
 </style>

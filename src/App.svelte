@@ -19,6 +19,7 @@ let nav = [
 let y;
 
 let title = nav[1].name;
+let dark_mode = true;
 
 function toggle_nav() {
   nav[0].visible = !nav[0].visible;
@@ -31,6 +32,11 @@ function toggle(num) {
   nav[num].visible = true;
   title = nav[num].name;
   nav[0].visible = !nav[0].visible;
+}
+
+function toggle_mode() {
+  dark_mode = !dark_mode;
+  window.document.body.classList.toggle('dark');
 }
 </script>
 
@@ -48,12 +54,14 @@ function toggle(num) {
     </div>
   {/if}
   
-  <div class="header">
+  <div class="header"  style="background-color: {!dark_mode ? '#eee' : '#191a22'}; color: {!dark_mode ? '#1e1f29' : '#eee'};">
     <span class="title">{title}</span>
+    <span class="mode" on:click={toggle_mode} style="">☯</span>
   </div>
 
-  <span class="burg" style="color: {y > 14 && !nav[0].visible ? '#fff' : '#1e1f29'};"
-    on:click={toggle_nav}>{!nav[0].visible ? '☰' : '✕'}</span>
+  <span class="burg" style="color: {dark_mode ? '#fff' : '#1e1f29'};" on:click={toggle_nav}>
+      {!nav[0].visible ? '☰' : '✕'}
+  </span>
 
     <!-- <span>{y}</span> -->
   
@@ -74,6 +82,20 @@ function toggle(num) {
 
 
 <style>
+:global(body) {
+  background-color: #1e1f29;
+  color: white;
+}
+
+:global(body.dark) {
+  background-color: white;
+  color: #1e1f29;
+}
+
+span:hover {
+  opacity: 0.8;
+}
+
 .nav {
   height: 100%;
   width: 100%;
@@ -86,6 +108,7 @@ function toggle(num) {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(5, 1fr);
+  z-index: 2;
 }
 
 @media (min-width: 420px) {
@@ -136,6 +159,28 @@ function toggle(num) {
   float: left;
 }
 
+.mode {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  cursor: pointer;
+  z-index: 1;
+  height: 60px;
+  line-height: 55px;
+}
+
+.mode:enabled  {
+  animation-name: spin;
+  animation-duration: 1s;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}
+}
+
+
 .burg {
   font-size: 2.2rem;
   padding-right: 10px;
@@ -149,6 +194,7 @@ function toggle(num) {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
 }
 
 .content {

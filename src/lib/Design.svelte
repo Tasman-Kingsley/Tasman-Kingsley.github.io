@@ -48,7 +48,7 @@ img {
 
 @media (min-width: 950px) {
     img {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -58,6 +58,14 @@ iframe {
     margin: auto;
     transition: width 1s;
 }
+
+@media (max-width: 500px) {
+    iframe {
+        width: 380px;
+        height: 240px;
+    }
+}
+
 
 @media (min-width: 500px) {
     iframe {
@@ -69,7 +77,7 @@ iframe {
 @media (min-width: 750px) {
     iframe {
         width: 750px;
-        height: 450px;
+        height: 470px;
     }
 }
 </style>
