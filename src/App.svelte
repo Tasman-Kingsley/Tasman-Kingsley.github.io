@@ -36,7 +36,7 @@ function toggle(num) {
 
 function toggle_mode() {
   dark_mode = !dark_mode;
-  window.document.body.classList.toggle('dark');
+  window.document.body.classList.toggle('light');
 }
 </script>
 
@@ -85,11 +85,17 @@ function toggle_mode() {
 :global(body) {
   background-color: #1e1f29;
   color: white;
+  background-image: url('src/assets/background-dark.png');
+  background-position: cover;
+  background-attachment: fixed;
 }
 
-:global(body.dark) {
+:global(body.light) {
   background-color: white;
   color: #1e1f29;
+  background-image: url('src/assets/background-light.png');
+  background-position: cover;
+  background-attachment: fixed;
 }
 
 span:hover {
