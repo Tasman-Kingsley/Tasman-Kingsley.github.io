@@ -85,7 +85,7 @@ function toggle_mode() {
 :global(body) {
   background-color: #1e1f29;
   color: white;
-  background-image: url('src/assets/background-dark.png');
+  background-image: url('images/background-dark.png');
   background-position: cover;
   background-attachment: fixed;
 }
@@ -93,7 +93,7 @@ function toggle_mode() {
 :global(body.light) {
   background-color: white;
   color: #1e1f29;
-  background-image: url('src/assets/background-light.png');
+  background-image: url('images/background-light.png');
   background-position: cover;
   background-attachment: fixed;
 }
