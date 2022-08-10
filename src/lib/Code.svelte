@@ -40,9 +40,12 @@
             study hiragana, katakana, or both at the same time.
         </p>
         <p>
-            The quiz presents a randomized grid of the kana and invites the user to remember
+            The quiz presents a randomized grid of the kana, and invites the user to remember
             the kana and input the corresponding romaji. The app will renforce learning and memory
             by validating the input and giving color feedback to the user for correct/incorrect answers.
+        </p>
+        <p>
+            Upon completing or ending the quiz, the user will get their score and feeback on the results screen.
         </p>
 
         <h3>Technology stack</h3>

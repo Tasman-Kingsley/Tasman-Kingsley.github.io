@@ -49,7 +49,7 @@ function toggle_mode() {
       <div class="nav-btn" on:click={() => toggle(1)}><span class="btn-txt">Home</span></div>
       <div class="nav-btn" on:click={() => toggle(2)}><span class="btn-txt">Code projects</span></div>
       <div class="nav-btn" on:click={() => toggle(3)}><span class="btn-txt">Design portfolio</span></div>
-      <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Music</span></div>
+      <!-- <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Music</span></div> -->
       <div class="nav-btn" on:click={() => toggle(5)}><span class="btn-txt">About</span></div>
     </div>
   {/if}
@@ -85,17 +85,17 @@ function toggle_mode() {
 :global(body) {
   background-color: #1e1f29;
   color: white;
-  background-image: url('images/background-dark.png');
+  /* background-image: url('images/background-dark.png');
   background-position: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 :global(body.light) {
   background-color: white;
   color: #1e1f29;
-  background-image: url('images/background-light.png');
+  /* background-image: url('images/background-light.png');
   background-position: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 span:hover {
