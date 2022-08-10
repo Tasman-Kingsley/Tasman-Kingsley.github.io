@@ -13,18 +13,18 @@
         <p>This is my version of a podcast rss feed catcher. This app will allow you to 
             either manually add rss feeds, or search for a podcast feed (via the itunes api)
             and add podcasts that way.
-            The added podcast shows will then be displayed on the home tab, you can then
-            navigate through the show episodes, view the episode notes, and play the episodes.
+            Added podcast shows will then be displayed on the home tab, you can then 
+            navigate through to the show episodes, view the episode notes, and play episodes.
         </p>
         <p>The app features a player which will continue to play an episode even while 
             browsing through the app or minimising the web browser.
-            The app also remembers your added shows when you return to the app via browser
+            The app will remember your added shows when you return to the app via browser
             local storage.
         </p>
         
 
         <h3>Technology stack</h3>
-        <p>This app is build with the svelte framework, netlify functions, itunes search api, 
+        <p>This app is built with the svelte framework, netlify functions, itunes search api, 
             javascript, css, and html.</p><br>
     </div>
 
@@ -46,7 +46,7 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is build with the vue framework, javascript, css, and html.</p><br>
+        <p>This app is built with the vue framework, javascript, css, and html.</p><br>
     </div>
 
     <iframe src="https://tasmankingsley.github.io/todo/" width="380" height="700"></iframe>
@@ -63,7 +63,7 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is build with the svelte framework, javascript, css, and html.</p><br>
+        <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
     </div>
 
     <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="380" height="700"></iframe>
@@ -84,7 +84,7 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is build with the svelte framework, javascript, css, and html.</p><br>
+        <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
     </div>
 
     <iframe src="https://tasmankingsley.github.io/tetris/" width="380" height="700"></iframe>
@@ -97,7 +97,7 @@
         <p>A simple tetris clone. Arrow keys to move, rotate, and drop faster.</p>
 
         <h3>Technology stack</h3>
-        <p>This app is build with javascript, css, and html.</p><br>
+        <p>This app is built with javascript, css, and html.</p><br>
     </div>
 
     <iframe src="https://tasmankingsley.github.io/new-tab/" width="380" height="700"></iframe>
@@ -112,7 +112,7 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is build with the svelte framework, javascript, css, and html.</p><br>
+        <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
     </div>
 
     <iframe src="https://tasmankingsley.github.io/calc/" width="280" height="350"></iframe>
@@ -127,7 +127,7 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is build with javascript, css, and html.</p><br>
+        <p>This app is built with javascript, css, and html.</p><br>
     </div>
 
     <img src="/images/giddy-grocery.jpg">
@@ -142,7 +142,7 @@
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
 
         <h3>Technology stack</h3>
-        <p>This website is build with javascript, jquery, php, sql, json, css, and html.</p><br>
+        <p>This website is built with javascript, jquery, php, sql, json, css, and html.</p><br>
     </div>
 
     <img src="/images/car-rental.jpg">
@@ -157,7 +157,7 @@
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
 
         <h3>Technology stack</h3>
-        <p>This website is build with javascript, jquery, json, css, and html.</p><br>
+        <p>This website is built with javascript, jquery, json, css, and html.</p><br>
     </div>
 
 </div>
