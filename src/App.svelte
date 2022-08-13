@@ -1,37 +1,41 @@
 <script>
+import { nav, title } from './lib/store.js';
+import { onMount } from "svelte";
 import Home from './lib/Home.svelte';
 import Code from './lib/Code.svelte';
 import Design from './lib/Design.svelte';
 import Music from './lib/Music.svelte';
 import About from './lib/About.svelte';
-import waves from './assets/waves.jpeg'
+import waves from './assets/waves.jpeg';
 import { fly } from 'svelte/transition';
 
-let nav = [
-  {name: 'Nav', visible: false},
-  {name: 'Tasman Kingsley', visible: true},
-  {name: 'Code projects', visible: false},
-  {name: 'Design portfolio', visible: false},
-  {name: 'Music project', visible: false},
-  {name: 'About', visible: false},
-]
+// let nav = [
+//   {name: 'Nav', visible: false},
+//   {name: 'Tasman Kingsley', visible: true},
+//   {name: 'Code projects', visible: false},
+//   {name: 'Design portfolio', visible: false},
+//   {name: 'Music project', visible: false},
+//   {name: 'About', visible: false},
+// ]
+
+onMount(() => window.scrollTo(0,0));
 
 let y;
 
-let title = nav[1].name;
+$title = $nav[1].name;
 let dark_mode = true;
 
 function toggle_nav() {
-  nav[0].visible = !nav[0].visible;
+  $nav[0].visible = !$nav[0].visible;
 }
 
 function toggle(num) {
-  for (let i = 1; i < nav.length - 1; i++) {
-    nav[i].visible = false;
+  for (let i = 1; i < $nav.length - 1; i++) {
+    $nav[i].visible = false;
   }
-  nav[num].visible = true;
-  title = nav[num].name;
-  nav[0].visible = !nav[0].visible;
+  $nav[num].visible = true;
+  $title = $nav[num].name;
+  $nav[0].visible = !$nav[0].visible;
 }
 
 function toggle_mode() {
@@ -43,7 +47,7 @@ function toggle_mode() {
 <svelte:window bind:scrollY={y}/>
 
 <div>
-  {#if nav[0].visible}
+  {#if $nav[0].visible}
     <div class="nav" in:fly={{x: 400, duration: 500}} out:fly={{x: 400, duration: 500}}
     style="background-image: url({waves});">
       <div class="nav-btn" on:click={() => toggle(1)}><span class="btn-txt">Home</span></div>
@@ -55,26 +59,26 @@ function toggle_mode() {
   {/if}
   
   <div class="header"  style="background-color: {!dark_mode ? '#eee' : '#191a22'}; color: {!dark_mode ? '#1e1f29' : '#eee'};">
-    <span class="title">{title}</span>
+    <span class="title">{$title}</span>
     <span class="mode" on:click={toggle_mode} style="">☯</span>
   </div>
 
   <span class="burg" style="color: {dark_mode ? '#fff' : '#1e1f29'};" on:click={toggle_nav}>
-      {!nav[0].visible ? '☰' : '✕'}
+      {!$nav[0].visible ? '☰' : '✕'}
   </span>
 
     <!-- <span>{y}</span> -->
   
   <div class="content">
-    {#if nav[1].visible}
+    {#if $nav[1].visible}
       <Home/>
-    {:else if nav[2].visible}
+    {:else if $nav[2].visible}
       <Code/>
-    {:else if nav[3].visible}
+    {:else if $nav[3].visible}
       <Design/>
-    {:else if nav[4].visible}
+    {:else if $nav[4].visible}
       <Music/>
-    {:else if nav[5].visible}
+    {:else if $nav[5].visible}
       <About/>
     {/if}
   </div>
@@ -163,6 +167,7 @@ span:hover {
   font-size: 1.8rem;
   padding-left: 10px;
   float: left;
+  cursor: pointer;
 }
 
 .mode {
@@ -188,11 +193,11 @@ span:hover {
 
 
 .burg {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 7px;
-  line-height: 51px;
+  /* padding-left: 10px; */
+  /* padding-bottom: 10px; */
+  line-height: 50px;
   background-color: none;
   border-radius: 2px;
   opacity: 0.9;

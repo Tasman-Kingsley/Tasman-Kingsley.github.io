@@ -1,25 +1,120 @@
 <script>
-    import { fly } from 'svelte/transition';
+import { nav, title } from './store.js';
+import { fly } from 'svelte/transition';
+import card_1 from '../assets/podcasts.jpg';
+import card_2 from '../assets/giddy-grocery.jpg';
+import card_3 from '../assets/persona-collage.jpg';
+import card_4 from '../assets/waves.jpeg';
+
+window.scrollTo(0,0);
+
+
+function toggle(num) {
+  for (let i = 1; i < $nav.length - 1; i++) {
+    $nav[i].visible = false;
+  }
+  $nav[num].visible = true;
+  $title = $nav[num].name;
+}
 </script>
 
-<div in:fly={{x: -400, duration: 500}}>
-    <p>Hello, Tasman here. This is my portfolio page.</p>
-    <p>Feel free to potter about and peruse my projects if you feel like it 😁</p>
+<div class="outer-grid" in:fly={{x: -400, duration: 500}}>
+    <div>
+        <p>Hello, Tasman here. This is my portfolio page.</p>
+        <p>Feel free to potter about and peruse my projects if you feel like it 😁</p>
+    </div>
+
+
+    <div class="inner-grid">
+        <div class="img" style="background-image: url({card_1})" on:click={() => toggle(2)}>
+            <div class="card-txt"><span>Web apps</span></div>
+        </div>
+        <div class="img" style="background-image: url({card_2})" on:click={() => toggle(2)}>
+            <div class="card-txt"><span>Web sites</span></div>
+        </div>
+        <div class="img" style="background-image: url({card_3})" on:click={() => toggle(3)}>
+            <div class="card-txt"><span>Design porfolio</span></div>
+        </div>
+        <div class="img" style="background-image: url({card_4})" on:click={() => toggle(5)}>
+            <div class="card-txt"><span>About</span></div>
+        </div>
+    </div>
+
+    
+    
 
     <!-- <iframe src="https://tasmankingsley.github.io/tetris/"
     width="380" height="630" style=""></iframe> -->
-    <iframe src="https://tasmankingsley.github.io/cube-three/" width="400" height="400"></iframe>
+    <!-- <iframe src="https://tasmankingsley.github.io/cube-three/" width="400" height="400"></iframe> -->
 </div>
 
 <style>
-div {
+.outer-grid {
     display: grid;
     grid-auto-flow: row;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    row-gap: 20px;
 }
-iframe {
-    border-radius: 50%; 
-    border: none;
-    margin: auto;
-    margin-top: 60px;
+
+p {
+    font-size: 1rem;
 }
+
+.inner-grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.img:hover {
+    opacity: 1;
+}
+
+.card-txt:hover {
+    opacity: 1;
+}
+
+.card-txt {
+    font-size: 2.3rem;
+    font-weight: 200;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+span {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+@media (min-width: 700px) {
+    .inner-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .img {
+        height: 300px;
+    }
+}
+
 </style>

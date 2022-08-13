@@ -1,5 +1,7 @@
 <script>
     import { fly } from 'svelte/transition';
+
+    window.scrollTo(0,0);
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>

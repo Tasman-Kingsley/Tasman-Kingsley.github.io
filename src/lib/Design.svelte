@@ -1,5 +1,7 @@
 <script>
     import { fly } from 'svelte/transition';
+
+    window.scrollTo(0,0);
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
@@ -24,6 +26,14 @@
     <iframe src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="grid-content">
         <h2>Jamingle prototype app flow</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+    
+    </div>
+
+    <div class="grid-content">
+        <h2>Hi Doge app flow</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
