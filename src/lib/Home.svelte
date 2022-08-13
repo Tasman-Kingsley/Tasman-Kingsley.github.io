@@ -1,7 +1,7 @@
 <script>
 import { nav, title } from './store.js';
 import { fly } from 'svelte/transition';
-import card_1 from '../assets/podcasts.jpg';
+import card_1 from '../assets/apps.jpg';
 import card_2 from '../assets/giddy-grocery.jpg';
 import card_3 from '../assets/persona-collage.jpg';
 import card_4 from '../assets/waves.jpeg';
