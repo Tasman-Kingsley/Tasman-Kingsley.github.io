@@ -3,6 +3,7 @@ import { nav, title } from './lib/store.js';
 import { onMount } from "svelte";
 import Home from './lib/Home.svelte';
 import Code from './lib/Code.svelte';
+import Pages from './lib/Pages.svelte';
 import Design from './lib/Design.svelte';
 import Music from './lib/Music.svelte';
 import About from './lib/About.svelte';
@@ -51,10 +52,11 @@ function toggle_mode() {
     <div class="nav" in:fly={{x: 400, duration: 500}} out:fly={{x: 400, duration: 500}}
     style="background-image: url({waves});">
       <div class="nav-btn" on:click={() => toggle(1)}><span class="btn-txt">Home</span></div>
-      <div class="nav-btn" on:click={() => toggle(2)}><span class="btn-txt">Code projects</span></div>
-      <div class="nav-btn" on:click={() => toggle(3)}><span class="btn-txt">Design portfolio</span></div>
+      <div class="nav-btn" on:click={() => toggle(2)}><span class="btn-txt">Web app projects</span></div>
+      <div class="nav-btn" on:click={() => toggle(3)}><span class="btn-txt">Website projects</span></div>
+      <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Design portfolio</span></div>
       <!-- <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Music</span></div> -->
-      <div class="nav-btn" on:click={() => toggle(5)}><span class="btn-txt">About</span></div>
+      <div class="nav-btn" on:click={() => toggle(6)}><span class="btn-txt">About</span></div>
     </div>
   {/if}
   
@@ -75,10 +77,12 @@ function toggle_mode() {
     {:else if $nav[2].visible}
       <Code/>
     {:else if $nav[3].visible}
-      <Design/>
+      <Pages/>
     {:else if $nav[4].visible}
-      <Music/>
-    {:else if $nav[5].visible}
+      <Design/>
+    <!-- {:else if $nav[5].visible}
+      <Music/> -->
+    {:else if $nav[6].visible}
       <About/>
     {/if}
   </div>

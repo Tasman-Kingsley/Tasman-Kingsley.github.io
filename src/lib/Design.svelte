@@ -1,7 +1,7 @@
 <script>
     import { fly } from 'svelte/transition';
 
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
@@ -48,18 +48,13 @@
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 30px;
+    column-gap: 30px;
 }
 img {
     width: 100%;
     margin: auto;
     transition: width 1s;
-}
-
-@media (min-width: 950px) {
-    img {
-        width: 70%;
-    }
 }
 
 iframe {
@@ -88,6 +83,10 @@ iframe {
     iframe {
         width: 750px;
         height: 470px;
+    }
+
+    .grid {
+        grid-template-columns: 3fr 2fr;
     }
 }
 </style>

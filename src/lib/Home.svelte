@@ -6,7 +6,7 @@ import card_2 from '../assets/giddy-grocery.jpg';
 import card_3 from '../assets/persona-collage.jpg';
 import card_4 from '../assets/waves.jpeg';
 
-window.scrollTo(0,0);
+window.scrollTo(0, 0);
 
 
 function toggle(num) {
@@ -29,13 +29,13 @@ function toggle(num) {
         <div class="img" style="background-image: url({card_1})" on:click={() => toggle(2)}>
             <div class="card-txt"><span>Web apps</span></div>
         </div>
-        <div class="img" style="background-image: url({card_2})" on:click={() => toggle(2)}>
-            <div class="card-txt"><span>Web sites</span></div>
+        <div class="img" style="background-image: url({card_2})" on:click={() => toggle(3)}>
+            <div class="card-txt"><span>Websites</span></div>
         </div>
-        <div class="img" style="background-image: url({card_3})" on:click={() => toggle(3)}>
+        <div class="img" style="background-image: url({card_3})" on:click={() => toggle(4)}>
             <div class="card-txt"><span>Design porfolio</span></div>
         </div>
-        <div class="img" style="background-image: url({card_4})" on:click={() => toggle(5)}>
+        <div class="img" style="background-image: url({card_4})" on:click={() => toggle(6)}>
             <div class="card-txt"><span>About</span></div>
         </div>
     </div>
