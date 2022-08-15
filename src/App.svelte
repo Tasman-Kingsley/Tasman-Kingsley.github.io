@@ -23,6 +23,9 @@ $title = $nav[1].name;
 let dark_mode = true;
 document.body.classList.add('dark');
 document.body.style.backgroundImage = `url(${dark})`;
+document.body.onscroll = () => {
+    document.body.style.backgroundPositionY = window.scrollY +"px";
+};
 
 // Burg toggle for nav
 function toggle_nav() {
@@ -45,12 +48,10 @@ function toggle_mode() {
   if (dark_mode === true) {
     document.body.classList.replace('light', 'dark');
     document.body.style.backgroundImage = `url(${dark})`;
-    document.body.style.backgroundAttachment = 'fixed';
   } 
   else if (dark_mode === false) {
     document.body.classList.replace('dark', 'light');
     document.body.style.backgroundImage = `url(${light})`;
-    document.body.style.backgroundAttachment = 'fixed';
   }
 }
 </script>
@@ -104,14 +105,12 @@ function toggle_mode() {
   background-color: #1e1f29;
   color: white;
   background-position: cover;
-  background-attachment: fixed;
 }
 
 :global(body.light) {
   background-color: white;
   color: #1e1f29;
   background-position: cover;
-  background-attachment: fixed;
 }
 
 span:hover {
