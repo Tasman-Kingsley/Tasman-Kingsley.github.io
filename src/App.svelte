@@ -45,10 +45,12 @@ function toggle_mode() {
   if (dark_mode === true) {
     document.body.classList.replace('light', 'dark');
     document.body.style.backgroundImage = `url(${dark})`;
+    document.body.style.backgroundAttachment = 'fixed';
   } 
   else if (dark_mode === false) {
     document.body.classList.replace('dark', 'light');
     document.body.style.backgroundImage = `url(${light})`;
+    document.body.style.backgroundAttachment = 'fixed';
   }
 }
 </script>
