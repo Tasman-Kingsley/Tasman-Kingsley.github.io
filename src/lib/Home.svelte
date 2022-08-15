@@ -40,12 +40,6 @@ function toggle(num) {
         </div>
     </div>
 
-    
-    
-
-    <!-- <iframe src="https://tasmankingsley.github.io/tetris/"
-    width="380" height="630" style=""></iframe> -->
-    <!-- <iframe src="https://tasmankingsley.github.io/cube-three/" width="400" height="400"></iframe> -->
 </div>
 
 <style>
@@ -77,7 +71,6 @@ p {
     width: 100%;
     height: 200px;
     border-radius: 15px;
-    /* border: 2px solid black; */
     cursor: pointer;
     opacity: 0.8;
 }

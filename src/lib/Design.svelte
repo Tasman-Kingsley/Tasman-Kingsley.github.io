@@ -10,8 +10,7 @@
         <h2>George persona</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
-    
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>    
     </div>
 
     <img class="persona" src="./images/Yuna-Persona.png" alt="">
@@ -20,7 +19,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
-
     </div>
 
     <iframe src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,20 +26,16 @@
         <h2>Jamingle prototype app flow</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
-    
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
     </div>
 
     <div class="grid-content">
         <h2>Hi Doge app flow</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
-    
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
     </div>
 </div>
-
-
 
 <style>
 .grid {
@@ -50,6 +44,7 @@
     grid-template-columns: 1fr;
     row-gap: 30px;
     column-gap: 30px;
+    place-items: center;
 }
 img {
     width: 100%;
@@ -71,7 +66,6 @@ iframe {
     }
 }
 
-
 @media (min-width: 500px) {
     iframe {
         width: 500px;
@@ -84,7 +78,6 @@ iframe {
         width: 750px;
         height: 470px;
     }
-
     .grid {
         grid-template-columns: 3fr 2fr;
     }

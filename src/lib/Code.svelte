@@ -23,7 +23,6 @@
             The app will remember your added shows when you return to the app via browser
             local storage.
         </p>
-        
 
         <h3>Technology stack</h3>
         <p>This app is built with the svelte framework, netlify functions, itunes search api, 
@@ -144,6 +143,7 @@
     grid-template-columns: 1fr;
     column-gap: 20px;
     row-gap: 20px;
+    place-items: center;
 }
 
 .grid-content {

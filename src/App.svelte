@@ -8,28 +8,28 @@ import Design from './lib/Design.svelte';
 import Music from './lib/Music.svelte';
 import About from './lib/About.svelte';
 import waves from './assets/waves.jpeg';
+import dark from  './assets/background-dark.png';
+import light from  './assets/background-light.png';
 import { fly } from 'svelte/transition';
-
-// let nav = [
-//   {name: 'Nav', visible: false},
-//   {name: 'Tasman Kingsley', visible: true},
-//   {name: 'Code projects', visible: false},
-//   {name: 'Design portfolio', visible: false},
-//   {name: 'Music project', visible: false},
-//   {name: 'About', visible: false},
-// ]
 
 onMount(() => window.scrollTo(0,0));
 
 let y;
 
+// Init title to home title
 $title = $nav[1].name;
-let dark_mode = true;
 
+// Init theme to dark mode
+let dark_mode = true;
+document.body.classList.add('dark');
+document.body.style.backgroundImage = `url(${dark})`;
+
+// Burg toggle for nav
 function toggle_nav() {
   $nav[0].visible = !$nav[0].visible;
 }
 
+// Selects page screen to make visable based on nav input
 function toggle(num) {
   for (let i = 1; i < $nav.length - 1; i++) {
     $nav[i].visible = false;
@@ -41,7 +41,15 @@ function toggle(num) {
 
 function toggle_mode() {
   dark_mode = !dark_mode;
-  window.document.body.classList.toggle('light');
+
+  if (dark_mode === true) {
+    document.body.classList.replace('light', 'dark');
+    document.body.style.backgroundImage = `url(${dark})`;
+  } 
+  else if (dark_mode === false) {
+    document.body.classList.replace('dark', 'light');
+    document.body.style.backgroundImage = `url(${light})`;
+  }
 }
 </script>
 
@@ -69,7 +77,7 @@ function toggle_mode() {
       {!$nav[0].visible ? '☰' : '✕'}
   </span>
 
-    <!-- <span>{y}</span> -->
+  <!-- <span>{y}</span> -->
   
   <div class="content">
     {#if $nav[1].visible}
@@ -90,20 +98,18 @@ function toggle_mode() {
 
 
 <style>
-:global(body) {
+:global(body.dark) {
   background-color: #1e1f29;
   color: white;
-  /* background-image: url('images/background-dark.png');
   background-position: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 :global(body.light) {
   background-color: white;
   color: #1e1f29;
-  /* background-image: url('images/background-light.png');
   background-position: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 span:hover {
@@ -199,8 +205,6 @@ span:hover {
 .burg {
   font-size: 2.5rem;
   padding-right: 10px;
-  /* padding-left: 10px; */
-  /* padding-bottom: 10px; */
   line-height: 50px;
   background-color: none;
   border-radius: 2px;
