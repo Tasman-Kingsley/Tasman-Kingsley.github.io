@@ -5,7 +5,7 @@
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
-    <iframe src="https://pods.netlify.app/" width="380" height="700"></iframe>
+    <iframe src="https://pods.netlify.app/" width="360" height="700"></iframe>
 
     <div class="grid-content">
         <h2>Podcast catcher webapp</h2>
@@ -28,8 +28,7 @@
         <p>This app is built with the svelte framework, netlify functions, itunes search api, 
             javascript, css, and html.</p><br>
     </div>
-
-    <iframe src="https://tasmankingsley.github.io/kana-kuizu/" width="380" height="700"></iframe>
+    <iframe src="https://tasmankingsley.github.io/kana-kuizu/" width="360" height="700"></iframe>
 
     <div class="grid-content">
         <h2>Kana quiz app</h2>
@@ -53,7 +52,7 @@
         <p>This app is built with the vue framework, javascript, css, and html.</p><br>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/todo/" width="380" height="700"></iframe>
+    <iframe src="https://tasmankingsley.github.io/todo/" width="360" height="700"></iframe>
 
     <div class="grid-content">
         <h2>Minimal to-do list</h2>
@@ -70,7 +69,7 @@
         <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="380" height="700"></iframe>
+    <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="360" height="700"></iframe>
 
     <div class="grid-content">
         <h2>Github-style consistency graph</h2>
@@ -91,7 +90,7 @@
         <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/tetris/" width="380" height="700"></iframe>
+    <iframe src="https://tasmankingsley.github.io/tetris/" width="360" height="700"></iframe>
 
     <div class="grid-content">
         <h2>Tetris clone</h2>
@@ -104,7 +103,7 @@
         <p>This app is built with javascript, css, and html.</p><br>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/new-tab/" width="380" height="700"></iframe>
+    <iframe src="https://tasmankingsley.github.io/new-tab/" width="360" height="700"></iframe>
 
     <div class="grid-content">
         <h2>New tab - customisable home page</h2>
@@ -151,8 +150,8 @@
 }
 
 iframe {
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 12px solid black;
+    border-radius: 40px;
     margin: auto;
 }
 
