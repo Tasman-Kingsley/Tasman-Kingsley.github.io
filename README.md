@@ -1,3 +1,3 @@
 # Tasman Kingsley
 
-A portfolio, a work in progress.
+My portfolio, a work in progress.
