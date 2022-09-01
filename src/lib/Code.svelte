@@ -32,7 +32,7 @@
 
     <div class="grid-content">
         <h2>Kana quiz app</h2>
-        <span><a href="https://tasmankingsley.github.io/kana-kuizu/">Web link</a></span><br>
+        <span><a href="https://kanakuizu.netlify.app/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/kana-kuizu">Github repo</a></span>
         <h3>Description</h3>
         <p>A simple quiz app for learning the Japanese kana syllabaries: hiragana and katakana.
