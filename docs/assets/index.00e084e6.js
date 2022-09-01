@@ -18,10 +18,10 @@ import{w as re,S,i as C,s as N,e as o,a as j,b as c,c as A,d as P,f as l,l as $,
         <h3>Technology stack</h3> 
         <p>This app is built with the svelte framework, netlify functions, itunes search api, 
             javascript, css, and html.</p><br/></div> 
-    <iframe src="https://kanakuizu.netlify.app/" width="360" height="700" class="svelte-1k2yd30"></iframe> 
+    <iframe src="https://kana-kuizu.web.app" width="360" height="700" class="svelte-1k2yd30"></iframe> 
 
     <div class="grid-content svelte-1k2yd30"><h2>Kana quiz app</h2> 
-        <span><a href="https://kanakuizu.netlify.app/">Web link</a></span><br/> 
+        <span><a href="https://kana-kuizu.web.app">Web link</a></span><br/> 
         <span><a href="https://github.com/tasmankingsley/kana-kuizu">Github repo</a></span> 
         <h3>Description</h3> 
         <p>A simple quiz app for learning the Japanese kana syllabaries: hiragana and katakana.
