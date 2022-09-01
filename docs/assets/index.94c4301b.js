@@ -18,7 +18,7 @@ import{w as re,S,i as C,s as N,e as o,a as j,b as c,c as A,d as P,f as l,l as $,
         <h3>Technology stack</h3> 
         <p>This app is built with the svelte framework, netlify functions, itunes search api, 
             javascript, css, and html.</p><br/></div> 
-    <iframe src="https://tasmankingsley.github.io/kana-kuizu/" width="360" height="700" class="svelte-1k2yd30"></iframe> 
+    <iframe src="https://kanakuizu.netlify.app/" width="360" height="700" class="svelte-1k2yd30"></iframe> 
 
     <div class="grid-content svelte-1k2yd30"><h2>Kana quiz app</h2> 
         <span><a href="https://kanakuizu.netlify.app/">Web link</a></span><br/> 

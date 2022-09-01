@@ -28,7 +28,7 @@
         <p>This app is built with the svelte framework, netlify functions, itunes search api, 
             javascript, css, and html.</p><br>
     </div>
-    <iframe src="https://tasmankingsley.github.io/kana-kuizu/" width="360" height="700"></iframe>
+    <iframe src="https://kanakuizu.netlify.app/" width="360" height="700"></iframe>
 
     <div class="grid-content">
         <h2>Kana quiz app</h2>
