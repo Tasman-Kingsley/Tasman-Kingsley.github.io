@@ -5,6 +5,7 @@
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
+
     <iframe src="https://pods.netlify.app/" width="360" height="700"></iframe>
 
     <div class="grid-content">
@@ -28,6 +29,7 @@
         <p>This app is built with the svelte framework, netlify functions, itunes search api, 
             javascript, css, and html.</p><br>
     </div>
+
     <iframe src="https://kana-kuizu.web.app" width="360" height="700"></iframe>
 
     <div class="grid-content">
@@ -67,6 +69,20 @@
 
         <h3>Technology stack</h3>
         <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
+    </div>
+
+    <iframe src="https://japanesejisho.web.app" width="360" height="700"></iframe>
+
+    <div class="grid-content">
+        <h2>Japanese Jisho</h2>
+        <span><a href="https://japanesejisho.web.app">Web link</a></span><br>
+        <span><a href="https://github.com/tasmankingsley/japanese-jisho">Github repo</a></span>
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem atque vitae quia optio reiciendis earum cum. Quia officia labore, dolor eveniet dolores facilis illo mollitia minima, sequi omnis tempore saepe.
+        </p>
+
+        <h3>Technology stack</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nostrum, maiores consectetur voluptates necessitatibus odit reiciendis officiis repellat, quas pariatur veritatis harum laborum. Aliquam, quae eos quos iure perferendis quis!</p><br>
     </div>
 
     <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="360" height="700"></iframe>
