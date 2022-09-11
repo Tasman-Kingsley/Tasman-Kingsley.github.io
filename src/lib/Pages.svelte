@@ -43,6 +43,21 @@
             single page app (SPA) design - for the time being.</p><br>
     </div>
 
+    <img src="/images/artist-website.jpg">
+
+    <div class="grid-content">
+        <h2>Artist website</h2>
+        <span><a href="https://artistwebsite.vercel.app/">Web link</a></span>
+        <span><a href="https://github.com/tasmankingsley/artist-website">Github repo</a></span>
+        <h3>Description</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam ullam voluptates, itaque nihil repellat ipsa pariatur illo dolorum fugit necessitatibus nobis velit maxime praesentium sed. Modi excepturi sequi officiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, aliquam necessitatibus quibusdam illo dicta porro! Sint velit odio corporis nihil laboriosam voluptate quia ad quam ipsa culpa! Fugit, excepturi vero.</p>
+
+        <h3>Technology stack</h3>
+        <p>This website is built with nuxt, vue and javascript</p><br>
+    </div>
+
     <img src="/images/car-rental.jpg">
 
     <div class="grid-content">
