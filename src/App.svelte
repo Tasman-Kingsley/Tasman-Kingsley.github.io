@@ -86,7 +86,7 @@ function toggle_mode() {
   </div>
 
   <span class="burg" style="color: {dark_mode ? '#fff' : '#1e1f29'};" on:click={toggle_nav}>
-      {!$nav[0].visible ? '☰' : '✕'}
+      {!$nav[0].visible ? '=' : '⤫'}
   </span>
 
   <!-- <span>{y}</span> -->
@@ -193,14 +193,13 @@ span:hover {
 }
 
 .mode {
-  font-size: 2.5rem;
+  font-size: 45px;
   position: absolute;
   top: 0;
   right: 60px;
   cursor: pointer;
   z-index: 1;
-  height: 60px;
-  line-height: 55px;
+  line-height: 52px;
 }
 
 .mode:enabled  {
@@ -215,7 +214,8 @@ span:hover {
 
 
 .burg {
-  font-size: 2.5rem;
+  font-size: 60px;
+  font-weight: 300;
   padding-right: 10px;
   line-height: 50px;
   background-color: none;
