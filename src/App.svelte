@@ -77,6 +77,7 @@ function toggle_mode() {
       <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Design portfolio</span></div>
       <!-- <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Music</span></div> -->
       <div class="nav-btn" on:click={() => toggle(6)}><span class="btn-txt">About</span></div>
+      <div class="close" style="background-color: {dark_mode ? '#191a22' : '#eee'}"></div>
     </div>
   {/if}
   
@@ -123,6 +124,19 @@ function toggle_mode() {
   background-position: cover;
   background-attachment: fixed;
 }
+
+.close {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 7px;
+  right: 7px;
+  background-color: #eee;
+  border-radius: 3px;
+  opacity: 0.9;
+}
+
+
 
 span:hover {
   opacity: 0.8;

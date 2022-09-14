@@ -6,11 +6,13 @@
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
 
-    <iframe src="https://pods.netlify.app/" width="360" height="700"></iframe>
+    <div class="a1">
+        <iframe src="https://pods.netlify.app/" width="360" height="700"></iframe>
+    </div>
 
-    <div class="grid-content">
-        <h2>Podcast catcher webapp</h2>
-        <span><a href="https://pods.netlify.app/">Web link</a></span><br>
+    <div class="content c1">
+        <h2>Podcast catcher web app</h2>
+        <span><a href="https://pods.netlify.app/">Web link</a></span>
         <span><a href="https://github.com/tasmankingsley/podcast-app">Github repo</a></span>
         <h3>Description</h3>
         <p>This is my version of a podcast rss feed catcher. This app will allow you to 
@@ -27,12 +29,19 @@
 
         <h3>Technology stack</h3>
         <p>This app is built with the svelte framework, netlify functions, itunes search api, 
-            javascript, css, and html.</p><br>
+            javascript, css, and html.</p>
+
+        <h3>Future considerations and implementations</h3>
+        <p>I would like upgrade this into a progressive web app (PWA), i also need to fix a CORS issue for some podcasts.</p><br>
     </div>
 
-    <iframe src="https://kana-kuizu.web.app" width="360" height="700"></iframe>
 
-    <div class="grid-content">
+
+    <div class="a2">
+        <iframe src="https://kana-kuizu.web.app" width="360" height="700"></iframe>
+    </div>
+    
+    <div class="content c2">
         <h2>Kana quiz app</h2>
         <span><a href="https://kana-kuizu.web.app">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/kana-kuizu">Github repo</a></span>
@@ -51,12 +60,16 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is built with the vue framework, javascript, css, and html.</p><br>
+        <p>This app is built with the vue framework, javascript, css, and html.</p>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/todo/" width="360" height="700"></iframe>
 
-    <div class="grid-content">
+
+    <div class="a3">
+        <iframe src="https://tasmankingsley.github.io/todo/" width="360" height="700"></iframe>
+    </div>
+
+    <div class="content c3">
         <h2>Minimal to-do list</h2>
         <span><a href="https://tasmankingsley.github.io/todo/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/todo">Github repo</a></span>
@@ -68,12 +81,16 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
+        <p>This app is built with the svelte framework, javascript, css, and html.</p>
     </div>
 
-    <iframe src="https://japanesejisho.web.app" width="360" height="700"></iframe>
 
-    <div class="grid-content">
+
+    <div class="a4">
+        <iframe src="https://japanesejisho.web.app" width="360" height="700"></iframe>
+    </div>
+
+    <div class="content c4">
         <h2>Japanese Jisho</h2>
         <span><a href="https://japanesejisho.web.app">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/japanese-jisho">Github repo</a></span>
@@ -82,12 +99,16 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nostrum, maiores consectetur voluptates necessitatibus odit reiciendis officiis repellat, quas pariatur veritatis harum laborum. Aliquam, quae eos quos iure perferendis quis!</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nostrum, maiores consectetur voluptates necessitatibus odit reiciendis officiis repellat, quas pariatur veritatis harum laborum. Aliquam, quae eos quos iure perferendis quis!</p>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="360" height="700"></iframe>
 
-    <div class="grid-content">
+
+    <div class="a5">
+        <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="360" height="700"></iframe>
+    </div>
+    
+    <div class="content c5">
         <h2>Github-style consistency graph</h2>
         <span><a href="https://tasmankingsley.github.io/consistency-graph/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/consistency-graph">Github repo</a></span>
@@ -103,12 +124,16 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
+        <p>This app is built with the svelte framework, javascript, css, and html.</p>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/tetris/" width="360" height="700"></iframe>
 
-    <div class="grid-content">
+
+    <div class="a6">
+        <iframe src="https://tasmankingsley.github.io/tetris/" width="360" height="700"></iframe>
+    </div>
+
+    <div class="content c6">
         <h2>Tetris clone</h2>
         <span><a href="https://tasmankingsley.github.io/tetris/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/tetris">Github repo</a></span>
@@ -116,12 +141,16 @@
         <p>A simple tetris clone. Arrow keys to move, rotate, and drop faster.</p>
 
         <h3>Technology stack</h3>
-        <p>This app is built with javascript, css, and html.</p><br>
+        <p>This app is built with javascript, css, and html.</p>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/new-tab/" width="360" height="700"></iframe>
 
-    <div class="grid-content">
+
+    <div class="a7">
+        <iframe src="https://tasmankingsley.github.io/new-tab/" width="360" height="700"></iframe>
+    </div>
+
+    <div class="content c7">
         <h2>New tab - customisable home page</h2>
         <span><a href="https://tasmankingsley.github.io/new-tab/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/new-tab">Github repo</a></span>
@@ -131,12 +160,16 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is built with the svelte framework, javascript, css, and html.</p><br>
+        <p>This app is built with the svelte framework, javascript, css, and html.</p>
     </div>
 
-    <iframe src="https://tasmankingsley.github.io/calc/" width="280" height="350"></iframe>
 
-    <div class="grid-content">
+    
+    <div class="a8">
+        <iframe src="https://tasmankingsley.github.io/calc/" width="280" height="350"></iframe>
+    </div>
+
+    <div class="content c8">
         <h2>Simple calculator</h2>
         <span><a href="https://tasmankingsley.github.io/calc/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/calc">Github repo</a></span>
@@ -146,7 +179,7 @@
         </p>
 
         <h3>Technology stack</h3>
-        <p>This app is built with javascript, css, and html.</p><br>
+        <p>This app is built with javascript, css, and html.</p>
     </div>
 
 </div>
@@ -156,13 +189,44 @@
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
+    grid-template-areas: 
+                            'a1''c1'
+                            'a2''c2'
+                            'a3''c3'
+                            'a4''c4'
+                            'a5''c5'
+                            'a6''c6'
+                            'a7''c7'
+                            'a8''c8';
     column-gap: 20px;
     row-gap: 20px;
-    place-items: center;
+    justify-items: center;
+
 }
 
-.grid-content {
-    /* margin-right: 20%; */
+.a1 { grid-area: a1; }
+.a2 { grid-area: a2; }
+.a3 { grid-area: a3; }
+.a4 { grid-area: a4; }
+.a5 { grid-area: a5; }
+.a6 { grid-area: a6; }
+.a7 { grid-area: a7; }
+.a8 { grid-area: a8; }
+.c1 { grid-area: c1; }
+.c2 { grid-area: c2; }
+.c3 { grid-area: c3; }
+.c4 { grid-area: c4; }
+.c5 { grid-area: c5; }
+.c6 { grid-area: c6; }
+.c7 { grid-area: c7; }
+.c8 { grid-area: c8; }
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #7e9ec7;
 }
 
 iframe {
@@ -171,11 +235,25 @@ iframe {
     margin: auto;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
     .grid {
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+                            'a1 c1'
+                            'c2 a2'
+                            'a3 c3'
+                            'c4 a4'
+                            'a5 c5'
+                            'c6 a6'
+                            'a7 c7'
+                            'c8 a8';
         row-gap: 50px;
     }
+
+    .content {
+        margin-left: 50px;
+        margin-right: 50px;
+    }   
 }
 
 @media (min-width: 950px) {

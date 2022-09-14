@@ -61,7 +61,7 @@
     <img src="/images/car-rental.jpg">
 
     <div class="grid-content">
-        <h2>Car rental fake business</h2>
+        <h2>Car rental - fake business</h2>
         <span><a href="https://tasmankingsley.github.io/psuedo-business/">Web link</a></span>
         <span><a href="https://github.com/tasmankingsley/psuedo-business">Github repo</a></span>
         <h3>Description</h3>
@@ -81,8 +81,20 @@
     grid-template-columns: 1fr;
     column-gap: 50px;
     row-gap: 10px;
-    place-items: center;
+    /* place-items: center; */
+    justify-items: center;
 }
+
+h3 {
+    color: #7e9ec7;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
 
 @media (min-width: 750px) {
     .grid {
@@ -100,9 +112,4 @@
     }
 }
 
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    vertical-align: middle;
-}
 </style>

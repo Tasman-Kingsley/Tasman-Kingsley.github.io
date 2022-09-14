@@ -20,8 +20,9 @@ function toggle(num) {
 
 <div class="outer-grid" in:fly={{x: -400, duration: 500}}>
     <div>
-        <p>Hello, Tasman here. This is my portfolio page.</p>
-        <p>Feel free to potter about and peruse my projects if you feel like it 😁</p>
+        <p>Hello, Tasman here. This is my portfolio page. <br>
+            Feel free to potter about and peruse my projects if you feel like it 😁
+        </p>
     </div>
 
 
@@ -53,7 +54,7 @@ function toggle(num) {
 }
 
 p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .inner-grid {
