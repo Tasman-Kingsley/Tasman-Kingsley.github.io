@@ -133,7 +133,7 @@ function toggle_mode() {
   right: 7px;
   background-color: #eee;
   border-radius: 3px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 
