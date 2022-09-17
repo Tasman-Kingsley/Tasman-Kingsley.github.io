@@ -1,7 +1,8 @@
 <script>
-    import { fly } from 'svelte/transition';
+import { fly } from 'svelte/transition';
 
-    window.scrollTo(0, 0);
+window.scrollTo(0, 0);
+
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
@@ -99,6 +100,7 @@ iframe {
                             'p1       p2'
                             'pcont pcont'
                             'jvid jcont';
+        row-gap: 80px;
     }
 }
 </style>

@@ -1,7 +1,27 @@
 <script>
-    import { fly } from 'svelte/transition';
+import { fly } from 'svelte/transition';
+import { onMount } from "svelte";
 
-    window.scrollTo(0, 0);
+window.scrollTo(0, 0);
+
+// transition elements in as they enter view
+onMount(() => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            // entry.target.classList.toggle('show', entry.isIntersecting);
+            
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    const hidden_elements = document.querySelectorAll('.hidden');
+
+    hidden_elements.forEach((el) => observer.observe(el));
+    
+});
+    
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
@@ -37,11 +57,11 @@
 
 
 
-    <div class="a2">
+    <div class="a2 hidden">
         <iframe src="https://kana-kuizu.web.app" width="360" height="700"></iframe>
     </div>
     
-    <div class="content c2">
+    <div class="content c2 hidden">
         <h2>Kana quiz app</h2>
         <span><a href="https://kana-kuizu.web.app">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/kana-kuizu">Github repo</a></span>
@@ -65,11 +85,11 @@
 
 
 
-    <div class="a3">
+    <div class="a3 hidden">
         <iframe src="https://tasmankingsley.github.io/todo/" width="360" height="700"></iframe>
     </div>
 
-    <div class="content c3">
+    <div class="content c3 hidden">
         <h2>Minimal to-do list</h2>
         <span><a href="https://tasmankingsley.github.io/todo/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/todo">Github repo</a></span>
@@ -86,11 +106,11 @@
 
 
 
-    <div class="a4">
+    <div class="a4 hidden">
         <iframe src="https://japanesejisho.web.app" width="360" height="700"></iframe>
     </div>
 
-    <div class="content c4">
+    <div class="content c4 hidden">
         <h2>Japanese Jisho</h2>
         <span><a href="https://japanesejisho.web.app">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/japanese-jisho">Github repo</a></span>
@@ -104,11 +124,11 @@
 
 
 
-    <div class="a5">
+    <div class="a5 hidden">
         <iframe src="https://tasmankingsley.github.io/consistency-graph/" width="360" height="700"></iframe>
     </div>
     
-    <div class="content c5">
+    <div class="content c5 hidden">
         <h2>Github-style consistency graph</h2>
         <span><a href="https://tasmankingsley.github.io/consistency-graph/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/consistency-graph">Github repo</a></span>
@@ -129,11 +149,11 @@
 
 
 
-    <div class="a6">
+    <div class="a6 hidden">
         <iframe src="https://tasmankingsley.github.io/tetris/" width="360" height="700"></iframe>
     </div>
 
-    <div class="content c6">
+    <div class="content c6 hidden">
         <h2>Tetris clone</h2>
         <span><a href="https://tasmankingsley.github.io/tetris/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/tetris">Github repo</a></span>
@@ -146,11 +166,11 @@
 
 
 
-    <div class="a7">
+    <div class="a7 hidden">
         <iframe src="https://tasmankingsley.github.io/new-tab/" width="360" height="700"></iframe>
     </div>
 
-    <div class="content c7">
+    <div class="content c7 hidden">
         <h2>New tab - customisable home page</h2>
         <span><a href="https://tasmankingsley.github.io/new-tab/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/new-tab">Github repo</a></span>
@@ -165,11 +185,11 @@
 
 
     
-    <div class="a8">
+    <div class="a8 hidden">
         <iframe src="https://tasmankingsley.github.io/calc/" width="280" height="350"></iframe>
     </div>
 
-    <div class="content c8">
+    <div class="content c8 hidden">
         <h2>Simple calculator</h2>
         <span><a href="https://tasmankingsley.github.io/calc/">Web link</a></span><br>
         <span><a href="https://github.com/tasmankingsley/calc">Github repo</a></span>
@@ -235,6 +255,24 @@ iframe {
     margin: auto;
 }
 
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+:global(.hidden) {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+:global(.show) {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 @media (min-width: 800px) {
     .grid {
         grid-template-columns: 1fr 1fr;
@@ -247,7 +285,7 @@ iframe {
                             'c6 a6'
                             'a7 c7'
                             'c8 a8';
-        row-gap: 50px;
+        row-gap: 100px;
     }
 
     .content {
@@ -259,15 +297,8 @@ iframe {
 @media (min-width: 950px) {
     .grid {
         grid-template-columns: 1fr 1fr;
-        row-gap: 50px;
-    }
-    .grid-content {
-        margin-right: 15%;
+        row-gap: 100px;
     }
 }
 
-img {
-    max-width: 100%;
-    border-radius: 20px;
-}
 </style>

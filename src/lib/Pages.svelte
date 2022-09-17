@@ -1,14 +1,31 @@
 <script>
-    import { fly } from 'svelte/transition';
+import { fly } from 'svelte/transition';
+import { onMount } from "svelte";
 
-    window.scrollTo(0, 0);
+window.scrollTo(0, 0);
+
+// transition elements in as they enter view
+onMount(() => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    const hidden_elements = document.querySelectorAll('.hidden');
+
+    hidden_elements.forEach((el) => observer.observe(el));
+    
+});
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
     <img src="/images/giddy-grocery.jpg">
 
     <div class="grid-content">
-        <h2>Giddy Grocery - online grocery store</h2>
+        <h2>Giddy Grocery - online store</h2>
         <span><a href="https://tasmankingsley.github.io/giddy-grocery/">Web link</a></span>
         <span><a href="https://github.com/tasmankingsley/giddy-grocery">Github repo</a></span>
         <h3>Description</h3>
@@ -25,9 +42,9 @@
         <p>This website is built with javascript, jquery, php, sql, json, css, and html.</p><br>
     </div>
 
-    <img src="/images/portfolio.jpg">
+    <img class="hidden" src="/images/portfolio.jpg">
 
-    <div class="grid-content">
+    <div class="grid-content hidden">
         <h2>This portfolio website</h2>
         <span><a href="https://tasmankingsley.github.io/">Web link</a></span>
         <span><a href="https://github.com/tasmankingsley/tasmankingsley.github.io">Github repo</a></span>
@@ -43,9 +60,9 @@
             single page app (SPA) design - for the time being.</p><br>
     </div>
 
-    <img src="/images/artist-website.jpg">
+    <img class="hidden" src="/images/artist-website.jpg">
 
-    <div class="grid-content">
+    <div class="grid-content hidden">
         <h2>Artist website</h2>
         <span><a href="https://artistwebsite.vercel.app/">Web link</a></span>
         <span><a href="https://github.com/tasmankingsley/artist-website">Github repo</a></span>
@@ -58,9 +75,9 @@
         <p>This website is built with nuxt, vue and javascript</p><br>
     </div>
 
-    <img src="/images/car-rental.jpg">
+    <img class="hidden" src="/images/car-rental.jpg">
 
-    <div class="grid-content">
+    <div class="grid-content hidden">
         <h2>Car rental - fake business</h2>
         <span><a href="https://tasmankingsley.github.io/psuedo-business/">Web link</a></span>
         <span><a href="https://github.com/tasmankingsley/psuedo-business">Github repo</a></span>
@@ -80,8 +97,8 @@
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     column-gap: 50px;
-    row-gap: 10px;
-    /* place-items: center; */
+    row-gap: 20px;
+    place-items: center;
     justify-items: center;
 }
 
@@ -98,17 +115,14 @@ img {
 
 @media (min-width: 750px) {
     .grid {
-        row-gap: 20px;
+        row-gap: 50px;
     }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1100px) {
     .grid {
         grid-template-columns: 5fr 3fr;
-        row-gap: 80px;
-    }
-    .grid-content {
-        margin-right: 15%;
+        row-gap: 180px;
     }
 }
 
