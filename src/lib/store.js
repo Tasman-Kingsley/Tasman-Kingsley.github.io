@@ -11,3 +11,5 @@ export let nav = writable([
   ]);
 
 export let title = writable('');
+
+export let dark_mode = writable(true);

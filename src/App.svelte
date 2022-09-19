@@ -1,5 +1,5 @@
 <script>
-import { nav, title } from './lib/store.js';
+import { nav, title, dark_mode } from './lib/store.js';
 import { onMount } from "svelte";
 import Home from './lib/Home.svelte';
 import Code from './lib/Code.svelte';
@@ -20,7 +20,7 @@ let y;
 $title = $nav[1].name;
 
 // Init theme to dark mode
-let dark_mode = true;
+$dark_mode = true;
 
 document.body.classList.add('dark');
 
@@ -48,15 +48,15 @@ function toggle(num) {
 }
 
 function toggle_mode() {
-  dark_mode = !dark_mode;
+  $dark_mode = !$dark_mode;
 
-  if (dark_mode === true) {
+  if ($dark_mode === true) {
     document.body.classList.replace('light', 'dark');
     if (window.visualViewport.width > 500) {
       document.body.style.backgroundImage = `url(${dark})`;
     }
   } 
-  else if (dark_mode === false) {
+  else if ($dark_mode === false) {
     document.body.classList.replace('dark', 'light');
     if (window.visualViewport.width > 500) {
       document.body.style.backgroundImage = `url(${light})`;
@@ -77,16 +77,16 @@ function toggle_mode() {
       <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Design portfolio</span></div>
       <!-- <div class="nav-btn" on:click={() => toggle(4)}><span class="btn-txt">Music</span></div> -->
       <div class="nav-btn" on:click={() => toggle(6)}><span class="btn-txt">About</span></div>
-      <div class="close" style="background-color: {dark_mode ? '#191a22' : '#eee'}"></div>
+      <div class="close" style="background-color: {$dark_mode ? '#191a22' : '#eee'}"></div>
     </div>
   {/if}
   
-  <div class="header"  style="background-color: {!dark_mode ? '#eee' : '#191a22'}; color: {!dark_mode ? '#1e1f29' : '#eee'};">
+  <div class="header"  style="background-color: {!$dark_mode ? '#eee' : '#191a22'}; color: {!$dark_mode ? '#1e1f29' : '#eee'};">
     <span class="title">{$title}</span>
     <span class="mode" on:click={toggle_mode} style="">☯</span>
   </div>
 
-  <span class="burg" style="color: {dark_mode ? '#fff' : '#1e1f29'};" on:click={toggle_nav}>
+  <span class="burg" style="color: {$dark_mode ? '#fff' : '#1e1f29'};" on:click={toggle_nav}>
       {!$nav[0].visible ? '=' : '⤫'}
   </span>
 

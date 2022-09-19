@@ -1,6 +1,7 @@
 <script>
 import { fly } from 'svelte/transition';
 import { onMount } from "svelte";
+import { dark_mode } from './store';
 
 window.scrollTo(0, 0);
 
@@ -31,9 +32,15 @@ onMount(() => {
     </div>
 
     <div class="content c1">
-        <h2>Podcast catcher web app</h2>
-        <span><a href="https://pods.netlify.app/">Web link</a></span>
-        <span><a href="https://github.com/tasmankingsley/podcast-app">Github repo</a></span>
+        <h2>Podcast app</h2>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://pods.netlify.app/">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/podcast-app">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>This is my version of a podcast rss feed catcher. This app will allow you to 
             either manually add rss feeds, or search for a podcast feed (via the itunes api)
@@ -63,8 +70,14 @@ onMount(() => {
     
     <div class="content c2 hidden">
         <h2>Kana quiz app</h2>
-        <span><a href="https://kana-kuizu.web.app">Web link</a></span><br>
-        <span><a href="https://github.com/tasmankingsley/kana-kuizu">Github repo</a></span>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://kana-kuizu.web.app">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/kana-kuizu">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>A simple quiz app for learning the Japanese kana syllabaries: hiragana and katakana.
             The app features an option menu on the home page where you can choose whether to
@@ -91,8 +104,14 @@ onMount(() => {
 
     <div class="content c3 hidden">
         <h2>Minimal to-do list</h2>
-        <span><a href="https://tasmankingsley.github.io/todo/">Web link</a></span><br>
-        <span><a href="https://github.com/tasmankingsley/todo">Github repo</a></span>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://tasmankingsley.github.io/todo/">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/todo">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>A minimal to-do list app. The user can input to-do items and check off the items
             when completed. The app features the ability to edit and remove the list items.
@@ -111,9 +130,15 @@ onMount(() => {
     </div>
 
     <div class="content c4 hidden">
-        <h2>Japanese Jisho</h2>
-        <span><a href="https://japanesejisho.web.app">Web link</a></span><br>
-        <span><a href="https://github.com/tasmankingsley/japanese-jisho">Github repo</a></span>
+        <h2>Japanese dictionary app</h2>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://japanesejisho.web.app">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/japanese-jisho">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem atque vitae quia optio reiciendis earum cum. Quia officia labore, dolor eveniet dolores facilis illo mollitia minima, sequi omnis tempore saepe.
         </p>
@@ -130,8 +155,14 @@ onMount(() => {
     
     <div class="content c5 hidden">
         <h2>Github-style consistency graph</h2>
-        <span><a href="https://tasmankingsley.github.io/consistency-graph/">Web link</a></span><br>
-        <span><a href="https://github.com/tasmankingsley/consistency-graph">Github repo</a></span>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://tasmankingsley.github.io/consistency-graph/">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/consistency-graph">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>A daily visual progress tracker inspired by the github contribution graph.
             The app will allow the user to check the day off as done (for tracking any goal).
@@ -155,8 +186,14 @@ onMount(() => {
 
     <div class="content c6 hidden">
         <h2>Tetris clone</h2>
-        <span><a href="https://tasmankingsley.github.io/tetris/">Web link</a></span><br>
-        <span><a href="https://github.com/tasmankingsley/tetris">Github repo</a></span>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://tasmankingsley.github.io/tetris/">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/tetris">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>A simple tetris clone. Arrow keys to move, rotate, and drop faster.</p>
 
@@ -172,8 +209,14 @@ onMount(() => {
 
     <div class="content c7 hidden">
         <h2>New tab - customisable home page</h2>
-        <span><a href="https://tasmankingsley.github.io/new-tab/">Web link</a></span><br>
-        <span><a href="https://github.com/tasmankingsley/new-tab">Github repo</a></span>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://tasmankingsley.github.io/new-tab/">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/new-tab">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>Designed to be set as a home page or new tab page, intended for displaying and 
             customising favourite links/bookmarks.
@@ -191,8 +234,14 @@ onMount(() => {
 
     <div class="content c8 hidden">
         <h2>Simple calculator</h2>
-        <span><a href="https://tasmankingsley.github.io/calc/">Web link</a></span><br>
-        <span><a href="https://github.com/tasmankingsley/calc">Github repo</a></span>
+
+        <div class="link-div">
+            <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+            <a href="https://tasmankingsley.github.io/calc/">Web link</a>
+            <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+            <a href="https://github.com/tasmankingsley/calc">Github repo</a>
+        </div>
+
         <h3>Description</h3>
         <p>A very simple calculator app inspired by the Mac OS calculator.
             One of my first forays into web programming.
@@ -256,8 +305,16 @@ iframe {
 }
 
 img {
-    max-width: 100%;
-    border-radius: 20px;
+    width: 20px;
+}
+
+.link-div {
+    display: grid;
+    place-items: left;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20px 100px 20px 1fr;
+    gap: 5px;
+    line-height: 20px;
 }
 
 :global(.hidden) {

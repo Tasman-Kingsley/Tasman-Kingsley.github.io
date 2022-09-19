@@ -3,11 +3,21 @@ import { fly } from 'svelte/transition';
 
 window.scrollTo(0, 0);
 
+let display_img = {
+    src: '',
+    visible: false
+};
+
+function display(src) {
+    display_img.src = src;
+    display_img.visible = true;
+}
+
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
-    <img class="persona p1" src="./images/persona-final.png" alt="">
-    <img class="persona p2" src="./images/Yuna-Persona.png" alt="">
+    <img class="persona p1" src="./images/persona-final.png" on:click={() => display("./images/persona-final.png")} alt="">
+    <img class="persona p2" src="./images/Yuna-Persona.png" on:click={() => display("./images/Yuna-Persona.png")} alt="">
     <div class="persona-content">
         <h2>Personas</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
@@ -31,6 +41,13 @@ window.scrollTo(0, 0);
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
     </div>
+
+    {#if display_img.visible}
+    <div class="display" on:click={() => display_img.visible = false}>
+        <span class="close">⤫</span>
+        <img class="display-img" src={display_img.src} />
+    </div>
+    {/if}
 </div>
 
 <style>
@@ -49,6 +66,30 @@ window.scrollTo(0, 0);
     /* place-items: center; */
 }
 
+.display {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.display-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.close {
+    position: fixed;
+    top: 0;
+    left: 15px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
 .persona-content {
     grid-area: pcont;
 }
@@ -56,6 +97,7 @@ window.scrollTo(0, 0);
 .persona {
     width: 100%;
     margin: auto;
+    cursor: pointer;
     transition: width 1s;
 }
 
