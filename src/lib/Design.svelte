@@ -16,18 +16,37 @@ function display(src) {
 </script>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
-    <img class="persona p1" src="./images/persona-final.png" on:click={() => display("./images/persona-final.png")} alt="">
-    <img class="persona p2" src="./images/Yuna-Persona.png" on:click={() => display("./images/Yuna-Persona.png")} alt="">
-    <div class="persona-content">
+    <div class="design content">
+        <h2>Design thinking</h2>
+        <p>From learning how to ask the right question, to doing desk research, conducting user research, creating a persona, 
+            using this persona and others to capture the essence with the group in affinity diagraming, 
+            ideating ideas with the group, experience stories and storyboards, lo-fi and hi-fi prototyping, 
+            and finally communicating the design in a video edit.</p>    
+    </div>
+
+    <img class="img p1" src="./images/persona-final.png" on:click={() => display("./images/persona-final.png")} alt="">
+    <img class="img p2" src="./images/Yuna-Persona.png" on:click={() => display("./images/Yuna-Persona.png")} alt="">
+    
+    <div class="personas content">
         <h2>Personas</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>    
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>    
+    </div>
+    
+    <div class="prototypes content">
+        <h2>Prototypes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>    
     </div>
 
 
     <iframe src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="grid-content">
+    
+    <div class="jamingle content">
         <h2>Jamingle prototype app flow</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
@@ -35,12 +54,30 @@ function display(src) {
     </div>
 
     <iframe src="https://www.youtube.com/embed/jPtX_QU5gz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="grid-content">
+    
+    <div class="hidoge content">
         <h2>HiDoge prototype app flow</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
             laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
             distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
     </div>
+
+
+    <div class="journal content">
+        <h2>Design principles journal</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
+    </div>
+
+    <div class="journal-img">
+        <img class="img" src="./images/journal-p1.jpg" on:click={() => display("./images/journal-p1.jpg")}/>
+        <img class="img" src="./images/journal-p2.jpg" on:click={() => display("./images/journal-p2.jpg")}/>
+        <img class="img" src="./images/journal-p3.jpg" on:click={() => display("./images/journal-p3.jpg")}/>
+        <img class="img" src="./images/journal-p4.jpg" on:click={() => display("./images/journal-p4.jpg")}/>
+    </div>
+
+
 
     {#if display_img.visible}
     <div class="display" on:click={() => display_img.visible = false}>
@@ -56,11 +93,17 @@ function display(src) {
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     grid-template-areas: 
+                        'design'
                         'p1'
                         'p2'
                         'pcont'
+                        'prototypes'
                         'jvid'
-                        'jcont';
+                        'jcont'
+                        'hvid'
+                        'hcont'
+                        'journal'
+                        'journal-img';
     row-gap: 20px;
     column-gap: 20px;
     /* place-items: center; */
@@ -86,19 +129,23 @@ function display(src) {
     position: fixed;
     top: 0;
     left: 15px;
-    font-size: 35px;
+    font-size: 40px;
     cursor: pointer;
 }
 
-.persona-content {
-    grid-area: pcont;
-}
-
-.persona {
+.img {
     width: 100%;
     margin: auto;
     cursor: pointer;
     transition: width 1s;
+}
+
+.design {
+    grid-area: design;
+}
+
+.prototypes {
+    grid-area: prototypes;
 }
 
 .p1 {
@@ -107,6 +154,22 @@ function display(src) {
 
 .p2 {
     grid-area: p2;
+}
+
+.personas {
+    grid-area: pcont;
+}
+
+.journal  {
+    grid-area: journal;
+}
+
+.journal-img {
+    grid-area: journal-img;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
 }
 
 iframe {
@@ -139,10 +202,22 @@ iframe {
     .grid {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-                            'p1       p2'
+                            'design design'
+                            'p1 p2'
                             'pcont pcont'
-                            'jvid jcont';
-        row-gap: 80px;
+                            'prototypes prototypes'
+                            'jvid jcont'
+                            'hvid hcont'
+                            'journal journal'
+                            'journal-img journal-img';
+        row-gap: 40px;
+    }
+    .content {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .journal-img {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 </style>

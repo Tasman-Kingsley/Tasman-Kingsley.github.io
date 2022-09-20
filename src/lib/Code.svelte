@@ -321,7 +321,7 @@ img {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1.5s;
 }
 
 :global(.show) {
