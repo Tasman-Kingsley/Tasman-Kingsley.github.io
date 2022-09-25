@@ -217,7 +217,7 @@ iframe {
         margin-right: 30px;
     }
     .journal-img {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 </style>
