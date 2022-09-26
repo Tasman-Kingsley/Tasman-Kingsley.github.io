@@ -28,27 +28,29 @@ onMount(() => {
     </a>
 
     <div class="grid-content">
-        <h2>Giddy Grocery - online store</h2>
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Giddy Grocery - online store</h2>
 
-        <div class="link-div">
-            <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
-            <a href="https://tasmankingsley.github.io/giddy-grocery/">Web link</a>
-            <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
-            <a href="https://github.com/tasmankingsley/giddy-grocery">Github repo</a>
+            <div class="link-div">
+                <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+                <a href="https://tasmankingsley.github.io/giddy-grocery/">Web link</a>
+                <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+                <a href="https://github.com/tasmankingsley/giddy-grocery">Github repo</a>
+            </div>
+
+            <h3>Description</h3>
+            <p>This website was a project initally built for a university assignment. The project
+                had a specification to fulfill including: the use of image maps for the catalogue, 
+                a product details section, a functional shopping cart, and a checkout confirmation and order form page.  
+            </p>
+            <p>For the assignment, the app was built with php and mysql for the backend and database on aws.
+                However, i have since re-written the php code in js on the front end accompanied with json instead of
+                mysql - in order to more easily host the website on github.
+            </p>
+
+            <h3>Technology stack</h3>
+            <p>This website is built with javascript, jquery, php, sql, json, css, and html.</p>
         </div>
-
-        <h3>Description</h3>
-        <p>This website was a project initally built for a university assignment. The project
-            had a specification to fulfill including: the use of image maps for the catalogue, 
-            a product details section, a functional shopping cart, and a checkout confirmation and order form page.  
-        </p>
-        <p>For the assignment, the app was built with php and mysql for the backend and database on aws.
-            However, i have since re-written the php code in js on the front end accompanied with json instead of
-            mysql - in order to more easily host the website on github.
-        </p>
-
-        <h3>Technology stack</h3>
-        <p>This website is built with javascript, jquery, php, sql, json, css, and html.</p><br>
     </div>
 
     <a href="https://tasmankingsley.github.io/" target="_blank">
@@ -56,25 +58,27 @@ onMount(() => {
     </a>
 
     <div class="grid-content hidden">
-        <h2>This portfolio website</h2>
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>This portfolio website</h2>
 
-        <div class="link-div">
-            <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
-            <a href="https://tasmankingsley.github.io/">Web link</a>
-            <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
-            <a href="https://github.com/tasmankingsley/tasmankingsley.github.io">Github repo</a>
+            <div class="link-div">
+                <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+                <a href="https://tasmankingsley.github.io/">Web link</a>
+                <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+                <a href="https://github.com/tasmankingsley/tasmankingsley.github.io">Github repo</a>
+            </div>
+
+            <h3>Description</h3>
+            <p>The website you are currently looking at!</p>
+            <p>It hosts my coding and design projects.
+                It is a SPA style svelte website. It features a custom sweeping navagation system, responsive grid
+                layouts, interactive mobile-style web apps, and a dark/light mode toggle.
+            </p>
+
+            <h3>Technology stack</h3>
+            <p>This website is built with svelte, js, css, and html. This website utilises a 
+                single page app (SPA) design - for the time being.</p>
         </div>
-
-        <h3>Description</h3>
-        <p>The website you are currently looking at!</p>
-        <p>It hosts my coding and design projects.
-            It is a SPA style svelte website. It features a custom sweeping navagation system, responsive grid
-            layouts, interactive mobile-style web apps, and a dark/light mode toggle.
-        </p>
-
-        <h3>Technology stack</h3>
-        <p>This website is built with svelte, js, css, and html. This website utilises a 
-            single page app (SPA) design - for the time being.</p><br>
     </div>
 
     <a href="https://artistwebsite.vercel.app/" target="_blank">
@@ -82,22 +86,24 @@ onMount(() => {
     </a>
 
     <div class="grid-content hidden">
-        <h2>Artist website</h2>
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Artist website</h2>
 
-        <div class="link-div">
-            <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
-            <a href="https://artistwebsite.vercel.app/">Web link</a>
-            <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
-            <a href="https://github.com/tasmankingsley/artist-website">Github repo</a>
+            <div class="link-div">
+                <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+                <a href="https://artistwebsite.vercel.app/">Web link</a>
+                <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+                <a href="https://github.com/tasmankingsley/artist-website">Github repo</a>
+            </div>
+
+            <h3>Description</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam ullam voluptates, itaque nihil repellat ipsa pariatur illo dolorum fugit necessitatibus nobis velit maxime praesentium sed. Modi excepturi sequi officiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, aliquam necessitatibus quibusdam illo dicta porro! Sint velit odio corporis nihil laboriosam voluptate quia ad quam ipsa culpa! Fugit, excepturi vero.</p>
+
+            <h3>Technology stack</h3>
+            <p>This website is built with nuxt, vue and javascript</p>
         </div>
-
-        <h3>Description</h3>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam ullam voluptates, itaque nihil repellat ipsa pariatur illo dolorum fugit necessitatibus nobis velit maxime praesentium sed. Modi excepturi sequi officiis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, aliquam necessitatibus quibusdam illo dicta porro! Sint velit odio corporis nihil laboriosam voluptate quia ad quam ipsa culpa! Fugit, excepturi vero.</p>
-
-        <h3>Technology stack</h3>
-        <p>This website is built with nuxt, vue and javascript</p><br>
     </div>
 
     <a href="https://tasmankingsley.github.io/psuedo-business/" target="_blank">
@@ -105,22 +111,24 @@ onMount(() => {
     </a>
 
     <div class="grid-content hidden">
-        <h2>Car rental - fake business</h2>
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Car rental - fake business</h2>
 
-        <div class="link-div">
-            <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
-            <a href="https://tasmankingsley.github.io/psuedo-business/">Web link</a>
-            <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
-            <a href="https://github.com/tasmankingsley/psuedo-business">Github repo</a>
+            <div class="link-div">
+                <img class="icon" src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+                <a href="https://tasmankingsley.github.io/psuedo-business/">Web link</a>
+                <img class="icon" src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+                <a href="https://github.com/tasmankingsley/psuedo-business">Github repo</a>
+            </div>
+
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+
+            <h3>Technology stack</h3>
+            <p>This website is built with javascript, jquery, json, css, and html.</p>
         </div>
-
-        <h3>Description</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
-
-        <h3>Technology stack</h3>
-        <p>This website is built with javascript, jquery, json, css, and html.</p><br>
     </div>
 </div>
 
@@ -133,6 +141,11 @@ onMount(() => {
     row-gap: 20px;
     place-items: center;
     justify-items: center;
+}
+
+.card {
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
 }
 
 h3 {

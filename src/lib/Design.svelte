@@ -1,5 +1,6 @@
 <script>
 import { fly } from 'svelte/transition';
+import { dark_mode } from "./store"
 
 window.scrollTo(0, 0);
 
@@ -17,57 +18,69 @@ function display(src) {
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
     <div class="design content">
-        <h2>Design thinking</h2>
-        <p>From learning how to ask the right question, to doing desk research, conducting user research, creating a persona, 
-            using this persona and others to capture the essence with the group in affinity diagraming, 
-            ideating ideas with the group, experience stories and storyboards, lo-fi and hi-fi prototyping, 
-            and finally communicating the design in a video edit.</p>    
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Design thinking</h2>
+            <p>From learning how to ask the right question, to doing desk research, conducting user research, creating a persona, 
+                using this persona and others to capture the essence with the group in affinity diagraming, 
+                ideating ideas with the group, experience stories and storyboards, lo-fi and hi-fi prototyping, 
+                and finally communicating the design in a video edit.</p>
+        </div>
     </div>
 
     <img class="img p1" src="./images/persona-final.png" on:click={() => display("./images/persona-final.png")} alt="">
     <img class="img p2" src="./images/Yuna-Persona.png" on:click={() => display("./images/Yuna-Persona.png")} alt="">
     
     <div class="personas content">
-        <h2>Personas</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>    
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Personas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+                distinctio aut amet fugiat nihil doloribus tenetur temporibus!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>
+        </div>    
     </div>
     
     <div class="prototypes content">
-        <h2>Prototypes</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>    
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Prototypes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+                distinctio aut amet fugiat nihil doloribus tenetur temporibus!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>
+        </div>    
     </div>
 
 
     <iframe src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <div class="jamingle content">
-        <h2>Jamingle prototype app flow</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Jamingle prototype app flow</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+        </div>
     </div>
 
     <iframe src="https://www.youtube.com/embed/jPtX_QU5gz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <div class="hidoge content">
-        <h2>HiDoge prototype app flow</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>HiDoge prototype app flow</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+        </div>
     </div>
 
 
     <div class="journal content">
-        <h2>Design principles journal</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-            laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-            distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p> 
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>Design principles journal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
+                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
+                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+        </div>
     </div>
 
     <div class="journal-img">
@@ -106,7 +119,12 @@ function display(src) {
                         'journal-img';
     row-gap: 20px;
     column-gap: 20px;
-    /* place-items: center; */
+    place-items: center;
+}
+
+.card {
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
 }
 
 .display {
@@ -213,8 +231,8 @@ iframe {
         row-gap: 40px;
     }
     .content {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .journal-img {
         grid-template-columns: repeat(4, 1fr);

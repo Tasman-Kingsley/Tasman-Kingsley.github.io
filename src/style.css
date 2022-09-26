@@ -17,6 +17,13 @@ p {
     line-height: 1.7rem;
 }
 
+ul {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
 a, a:visited {
     font-family: Roboto Mono;
     color: #78b2aa;
