@@ -20,7 +20,15 @@ function display(src) {
     <div class="design content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Design thinking</h2>
-            <p>From learning how to ask the right question, to doing desk research, conducting user research, creating a persona, 
+            <p>Design thinking is a process and a mindset to approach designing and innovating products or services for people.
+                There are many different design approaches and design philosophies, the approaches i have learnt were taught to me in University, and the ideas that were taught to me were
+                very much influenced by Don Norman - who is considered by many to be the father of Human Centered Design (HCD).<br><br>
+                
+                Introduce the idea of design thinking and human centered design. Mention HCD vs UCD, UxD, ECD, and PD  Mention how
+                Don Norman was the father of HCD. The five phases of deign thinking - 1. Empathize, 2. Define, 3. Ideate, 4. Prototype and 5. Test.
+                The different subsets and philosophies of design.
+                How i approached design in my Uni subjects.
+                From learning how to ask the right question, to doing desk research, conducting user research, creating a persona, 
                 using this persona and others to capture the essence with the group in affinity diagraming, 
                 ideating ideas with the group, experience stories and storyboards, lo-fi and hi-fi prototyping, 
                 and finally communicating the design in a video edit.</p>
@@ -33,20 +41,19 @@ function display(src) {
     <div class="personas content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Personas</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-                distinctio aut amet fugiat nihil doloribus tenetur temporibus!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>
+            <p>Personas are one of the tools or methods that can be used in the process of design thinking. 
+                They are often used early on in the process, and are used to empathise with and humanise the people in which we are designing for.
+                They enable us to collate together a fictional archetypal person who represents the people we are designing for.<br>
+                Displayed above are two personas which i have created for uni projects.</p>
         </div>    
     </div>
     
     <div class="prototypes content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Prototypes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-                distinctio aut amet fugiat nihil doloribus tenetur temporibus!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nesciunt ipsam corrupti vitae dolore illo, nisi voluptates eum ea vel commodi quae perspiciatis qui esse pariatur amet assumenda beatae necessitatibus!</p>
+            <p>Below are two examples of hi-fi prototypes which i have created.
+                Both were created for University projects, and both were created using adobe xd.
+            </p>
         </div>    
     </div>
 
@@ -56,9 +63,7 @@ function display(src) {
     <div class="jamingle content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Jamingle prototype app flow</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+            <p>This project was about...</p>
         </div>
     </div>
 
@@ -67,9 +72,7 @@ function display(src) {
     <div class="hidoge content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>HiDoge prototype app flow</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+            <p>This project was about...</p>
         </div>
     </div>
 
@@ -77,9 +80,10 @@ function display(src) {
     <div class="journal content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Design principles journal</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+            <p>Here is an example of some of a 'journal entry' which is used to analyse the underlying design principles of a design.
+                This journal is an example from an interaction design subject at Uni. It showcases some of the design principles i have learned and put into practice.
+
+            </p>
         </div>
     </div>
 
@@ -119,7 +123,8 @@ function display(src) {
                         'journal-img';
     row-gap: 20px;
     column-gap: 20px;
-    place-items: center;
+    /* place-items: center; */
+    align-items: center;
 }
 
 .card {
