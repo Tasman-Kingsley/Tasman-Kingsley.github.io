@@ -60,7 +60,9 @@ onMount(() => {
                 javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>I would like upgrade this into a progressive web app (PWA), i also need to fix a CORS issue for some podcasts.</p>
+            <p>I would like upgrade this into a progressive web app (PWA) for better offline use. Optimise the 
+                rss feed fetching - so the feed isn't re-loaded everytime the podcast show list is viewed.
+            </p>
         </div>
     </div>
 
@@ -126,6 +128,9 @@ onMount(() => {
 
             <h3>Technology stack</h3>
             <p>This app is built with the svelte framework, javascript, css, and html.</p>
+
+            <h3>Future considerations and implementations</h3>
+            <p>Possible improvemnts could be to make list items draggable and organisable. Add ability to have tabs of seperate todo lists.</p>
         </div>
     </div>
 
@@ -147,11 +152,20 @@ onMount(() => {
             </div>
 
             <h3>Description</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem atque vitae quia optio reiciendis earum cum. Quia officia labore, dolor eveniet dolores facilis illo mollitia minima, sequi omnis tempore saepe.
+            <p>A Japanese dictionary web app. Inspired by the Shirabe Jisho and 'Japanese' apps on the IOS app store. This web app primarily leverages
+                the JMdict file, a database file created by Jim Breen and the Electronic Dictionary Research and Development Group (EDRDG).
+                I have designed this app so the user can search the dictionary database with english words in order to find the Japanese equivalent/translation.
+                The app also features: a word list section to browse through words in the database, a kana table for reference to the hiragana and katakana syllabaries, 
+                and a kanji list to reference the most common kanji ordered by grade.
             </p>
 
             <h3>Technology stack</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nostrum, maiores consectetur voluptates necessitatibus odit reiciendis officiis repellat, quas pariatur veritatis harum laborum. Aliquam, quae eos quos iure perferendis quis!</p>
+            <p>This app is built with the vue framework, firebase realtime database and hosting, javascript, css, and html.</p>
+
+            <h3>Future considerations and implementations</h3>
+            <p>This app needs several improvements: top priority is to optimise the database loading and access - i want to perhaps only load the database to client side once and store in a clientside indexDB (looking into using localforage for an indexDB approach),
+                to make the kanji list searchable, add ability to search in with Japanese characters, add better word lists (eg. include JLPT lists).
+            </p>
         </div>
     </div>
 
@@ -185,6 +199,9 @@ onMount(() => {
 
             <h3>Technology stack</h3>
             <p>This app is built with the svelte framework, javascript, css, and html.</p>
+
+            <h3>Future considerations and implementations</h3>
+            <p>I need to implement the ability to add and delete new graphs (this will be easy to implement with component generation in svelte).</p>
         </div>
     </div>
 
@@ -237,6 +254,11 @@ onMount(() => {
 
             <h3>Technology stack</h3>
             <p>This app is built with the svelte framework, javascript, css, and html.</p>
+
+            <h3>Future considerations and implementations</h3>
+            <p>I want to make the icons draggable, to easily re-arrange the order without needing to delete and add again.
+                Improve customisability (eg. change background colour, image, and edit already existing icon links).
+            </p>
         </div>
     </div>
 
