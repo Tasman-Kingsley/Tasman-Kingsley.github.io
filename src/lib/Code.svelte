@@ -60,7 +60,7 @@ onMount(() => {
                 javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>I would like upgrade this into a progressive web app (PWA) for better offline use. Optimise the 
+            <p>I would like to upgrade this into a progressive web app (PWA) for better offline use. Optimise the 
                 rss feed fetching - so the feed isn't re-loaded everytime the podcast show list is viewed.
             </p>
         </div>

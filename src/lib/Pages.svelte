@@ -43,13 +43,14 @@ onMount(() => {
                 had a specification to fulfill including: the use of image maps for the catalogue, 
                 a product details section, a functional shopping cart, and a checkout confirmation and order form page.  
             </p>
-            <p>For the assignment, the app was built with php and mysql for the backend and database on aws.
-                However, i have since re-written the php code in js on the front end accompanied with json instead of
+            <p>For the assignment the app was built with php on a linux server, and a mysql database for the backend on AWS.
+                However, i have since re-written the php code in javascript on the front end, accompanied with json instead of
                 mysql - in order to more easily host the website on github.
+                I managed to get perfect marks for this uni project.
             </p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with javascript, jquery, php, sql, json, css, and html.</p>
+            <p>This website is built with javascript, jquery, php, sql, json, css, html, and initially with AWS elastic beanstalk.</p>
         </div>
     </div>
 
@@ -76,7 +77,7 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with svelte, js, css, and html. This website utilises a 
+            <p>This website is built with svelte, javascript, css, and html. This website utilises a 
                 single page app (SPA) design - for the time being.</p>
         </div>
     </div>
@@ -98,11 +99,11 @@ onMount(() => {
 
             <h3>Description</h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam ullam voluptates, itaque nihil repellat ipsa pariatur illo dolorum fugit necessitatibus nobis velit maxime praesentium sed. Modi excepturi sequi officiis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, aliquam necessitatibus quibusdam illo dicta porro! Sint velit odio corporis nihil laboriosam voluptate quia ad quam ipsa culpa! Fugit, excepturi vero.</p>
+            <p>This is an example website depicting a fictional artist's website. I developed this site to learn and practice the Nuxt Vue.js framework, including its markdown headless CMS (content management system) capabilities.</p>
+            <p>In order to provide gallery content to this artist website, i used some very basic (and admittedly bad) generative art that i created one afternoon while i was having fun experimenting with Matt DesLauriers' awesome canvas-sketch framework.</p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with nuxt, vue and javascript</p>
+            <p>This website is built with the nuxt framework (a vue.js framework), the nuxt content plugin, javascript, css, and html.</p>
         </div>
     </div>
 
@@ -122,12 +123,14 @@ onMount(() => {
             </div>
 
             <h3>Description</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse eligendi 
-                laudantium maiores, dolore maxime iusto molestias error vel velit magnam tempora 
-                distinctio aut amet fugiat nihil doloribus tenetur temporibus!</p>
+            <p>This website was also a project built for a university assignment. The project had a specification to follow which included:
+                accessing and displaying a self-generated json data set of cars for rent, a functional shopping cart, and a checkout form (among many other details).</p>
+            <p>The project was mainly to get us as students working with javascript, jquery, and introducing us to working with json data (after previously learning xml).
+                Fortunately i managed to get perfect marks for this project also.
+            </p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with javascript, jquery, json, css, and html.</p>
+            <p>This website is built with vanilla javascript, jquery, json, css, and html.</p>
         </div>
     </div>
 </div>
