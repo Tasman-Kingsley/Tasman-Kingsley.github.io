@@ -81,7 +81,9 @@ function toggle_mode() {
     </div>
   {/if}
   
-  <div class="header"  style="background-color: {!$dark_mode ? '#eee' : '#191a22'}; color: {!$dark_mode ? '#1e1f29' : '#eee'};">
+  <div class="header"  style="background-color: {!$dark_mode ? '#eee' : '#191a22'}; color: {!$dark_mode ? '#1e1f29' : '#eee'}; opacity: {$nav[0].visible ? 0.4 : 1};"
+  on:click={() => $nav[0].visible = false}>
+
     <span class="title">{$title}</span>
     <span class="mode" on:click={toggle_mode} style="">☯</span>
   </div>
@@ -92,7 +94,7 @@ function toggle_mode() {
 
   <!-- <span>{y}</span> -->
   
-  <div class="content">
+  <div class="content" on:click={() => $nav[0].visible = false} style="opacity: {$nav[0].visible ? 0.4 : 1}">
     {#if $nav[1].visible}
       <Home/>
     {:else if $nav[2].visible}
@@ -197,6 +199,7 @@ span:hover {
   height: 60px;
   line-height: 60px;
   font-weight: 300;
+  transition: opacity 0.3s;
 }
 
 .title {
@@ -247,6 +250,7 @@ span:hover {
   justify-content: center;
   align-items: center;
   margin: 15px;
+  transition: opacity 0.3s;
   
 }
 </style>

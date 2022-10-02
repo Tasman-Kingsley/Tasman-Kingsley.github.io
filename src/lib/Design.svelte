@@ -95,7 +95,7 @@ function display(src) {
     
     <div class="jamingle content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
-            <h2>Jamingle prototype app flow</h2>
+            <h3>Jamingle prototype app flow</h3>
             <p>This is a prototype which i made for a group University project in a subject called Experience Centered Design.
                 The topic question my group chose was: 
                 <i>"How can digital interactions involving music make the experience of university students doing online learning due to COVID more meaningful?".</i> The theme was disconnection. 
@@ -111,7 +111,7 @@ function display(src) {
     
     <div class="hidoge content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
-            <h2>HiDoge prototype app flow</h2>
+            <h3>HiDoge prototype app flow</h3>
             <p>This is a prototype which i made for a group University project in a subject called Fundamentals of Interaction Design.
                 Similarly to the Jamingle prototype, for the HiDoge project i carried out: user research, affinity diagramming, persona creation, ideation, experience stories, story boarding, and lo-fi paper prototyping,
                 before developing this hi-fi prototype shown in the youtube video (again the design of this prototype was created by me in adobe xd).
@@ -122,7 +122,7 @@ function display(src) {
 
     <div class="journal content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
-            <h2>Design principles journal</h2>
+            <h2>Design Principles Journal</h2>
             <p>Here is an example of a 'journal entry' which is a tool used to analyse the underlying design principles of a design. I chose to analyse the Spotify IOS app for this journal. I used a combination of Gestalt principles, Jakob Nielsen's usability heuristics, and fundamental
                 psychological concepts of interaction as outlined my Don Norman, including: affordances, signifiers, constraints, mappings, feedback, and visibility.
                 This journal is an example from an interaction design subject at Uni. It showcases some of the design principles i have learnt and put into practice.
