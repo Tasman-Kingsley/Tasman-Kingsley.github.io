@@ -45,8 +45,8 @@ onMount(() => {
             <h3>Description</h3>
             <p>This is my version of a podcast rss feed catcher. This app will allow you to 
                 either manually add rss feeds, or search for a podcast feed (via the itunes api)
-                and add podcasts that way.
-                Added podcast shows will then be displayed on the home tab, you can then 
+                to add podcast shows.
+                Added podcast shows will then be displayed on the home tab. You can  
                 navigate through to the show episodes, view the episode notes, and play episodes.
             </p>
             <p>The app features a player which will continue to play an episode even while 
@@ -60,7 +60,7 @@ onMount(() => {
                 javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>I would like to upgrade this into a progressive web app (PWA) for better offline use. Optimise the 
+            <p>I would like to upgrade this into a progressive web app (PWA) for better offline use, and optimise the 
                 rss feed fetching - so the feed isn't re-loaded everytime the podcast show list is viewed.
             </p>
         </div>
@@ -90,8 +90,9 @@ onMount(() => {
             </p>
             <p>
                 The quiz presents a randomized grid of the kana, and invites the user to remember
-                the kana and input the corresponding romaji. The app will renforce learning and memory
-                by validating the input and giving color feedback to the user for correct/incorrect answers.
+                the kana and input the corresponding romaji. For example: for the hiragana 'か' you would input 'ka' and press enter for a correct answer. 
+                The app will renforce learning and memory by validating the input and giving color feedback to the user for correct/incorrect answers. 
+                For reference for all the kana, please view my other app 'Japanese Jisho' below, they work well together as a study tool.
             </p>
             <p>
                 Upon completing or ending the quiz, the user will get their score and feeback on the results screen.
