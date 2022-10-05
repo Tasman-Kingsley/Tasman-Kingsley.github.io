@@ -202,7 +202,7 @@ onMount(() => {
             <p>This app is built with the svelte framework, javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>I need to implement the ability to add and delete new graphs (this will be easy to implement with component generation in svelte).</p>
+            <p>I need to make newly added graphs individualistic.</p>
         </div>
     </div>
 
