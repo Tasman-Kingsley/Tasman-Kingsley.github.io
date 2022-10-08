@@ -85,7 +85,7 @@ function toggle_mode() {
   on:click={() => $nav[0].visible = false}>
 
     <span class="title">{$title}</span>
-    <span class="mode" on:click={toggle_mode} style="">☯</span>
+    <span class="mode" style="transform: {$dark_mode ? 'rotate(0deg)' : 'rotate(1080deg)'};" on:click={toggle_mode}>☯</span>
   </div>
 
   <span class="burg" style="color: {$dark_mode ? '#fff' : '#1e1f29'};" on:click={toggle_nav}>
@@ -217,16 +217,8 @@ span:hover {
   cursor: pointer;
   z-index: 1;
   line-height: 52px;
-}
-
-.mode:enabled  {
-  animation-name: spin;
-  animation-duration: 1s;
-}
-
-@keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(180deg);}
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
 }
 
 
