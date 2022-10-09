@@ -125,7 +125,7 @@ onMount(() => {
             <p>A simple live chatroom app. The app uses google authenication through firebase to enable the user to login.
                 Once signed in the user can participate in an open chatroom with other authenticated users using firebase's firestore database.
             </p>
-            <p>Note - Due to authenitication this app doesn't work well within an iframe, please visit the <a href="https://hyprcht.web.app/">web link</a> to test the app.</p>
+            <p>Note - due to authenitication this app doesn't work well within an iframe, please visit the <a href="https://hyprcht.web.app/">web link</a> to test the app.</p>
 
             <h3>Technology stack</h3>
             <p>This app is built with the <span style="color: #80d7f6">react framework</span>, firebase (firestore, authenitication, and hosting), javascript, css, and html.</p>
