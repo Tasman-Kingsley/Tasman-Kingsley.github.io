@@ -50,7 +50,7 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with javascript, jquery, php, sql, json, css, html, and initially with AWS elastic beanstalk.</p>
+            <p>This website is built with <span style="color: #eddc67">javascript</span>, jquery, php, sql, json, css, html, and initially with AWS elastic beanstalk.</p>
         </div>
     </div>
 
@@ -77,7 +77,7 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with svelte, javascript, css, and html. This website utilises a 
+            <p>This website is built with <span style="color: #eb5027">svelte</span>, javascript, css, and html. This website utilises a 
                 single page app (SPA) design - for the time being.</p>
         </div>
     </div>
@@ -103,7 +103,7 @@ onMount(() => {
             <p>In order to provide gallery content to this artist website, i used some very basic (and admittedly bad) generative art that i created one afternoon while i was having fun experimenting with Matt DesLauriers' awesome canvas-sketch framework.</p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with the nuxt framework (a vue.js framework), the nuxt content plugin, javascript, css, and html.</p>
+            <p>This website is built with the <span style="color: #64b586">nuxt framework</span> (a vue.js framework), the nuxt content plugin, javascript, css, and html.</p>
         </div>
     </div>
 
@@ -130,7 +130,7 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This website is built with vanilla javascript, jquery, json, css, and html.</p>
+            <p>This website is built with <span style="color: #eddc67">vanilla javascript</span>, jquery, json, css, and html.</p>
         </div>
     </div>
 </div>

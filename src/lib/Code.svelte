@@ -56,7 +56,7 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with the svelte framework, netlify functions, itunes search api, 
+            <p>This app is built with the <span style="color: #eb5027">svelte framework</span>, netlify functions, itunes search api, 
                 javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
@@ -65,7 +65,6 @@ onMount(() => {
             </p>
         </div>
     </div>
-
 
 
     <div class="a2 hidden">
@@ -99,42 +98,42 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with the vue framework, javascript, css, and html.</p>
+            <p>This app is built with the <span style="color: #64b586">vue framework</span>, javascript, css, and html.</p>
         </div>
     </div>
 
 
-
     <div class="a3 hidden">
-        <iframe src="https://tasmankingsley.github.io/todo/" width="360" height="700"></iframe>
+        <a href="https://hyprcht.web.app/">
+            <img class="hyprcht-img" src="./images/hyperchat.png" alt="hyperchat image"/>
+            <!-- <iframe src="https://hyprcht.web.app/" width="360" height="700"></iframe> -->
+        </a>
     </div>
 
     <div class="content c3 hidden">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
-            <h2>Minimal to-do list</h2>
+            <h2>Messaging app</h2>
 
             <div class="link-div">
                 <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
-                <a href="https://tasmankingsley.github.io/todo/">Web link</a>
+                <a href="https://hyprcht.web.app/">Web link</a>
                 <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
-                <a href="https://github.com/tasmankingsley/todo">Github repo</a>
+                <a href="https://github.com/tasmankingsley/hyperchat">Github repo</a>
             </div>
 
             <h3>Description</h3>
-            <p>A minimal to-do list app. The user can input to-do items and check off the items
-                when completed. The app features the ability to edit and remove the list items.
-                The user's list will also be saved in browser local storage for the ability to
-                return to list after closinng the page.
+            <p>A simple live chatroom app. The app uses google authenication through firebase to enable the user to login.
+                Once signed in the user can participate in an open chatroom with other authenticated users using firebase's firestore database.
             </p>
+            <p>Note - Due to authenitication this app doesn't work well within an iframe, please visit the <a href="https://hyprcht.web.app/">web link</a> to test the app.</p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with the svelte framework, javascript, css, and html.</p>
+            <p>This app is built with the <span style="color: #80d7f6">react framework</span>, firebase (firestore, authenitication, and hosting), javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>Possible improvemnts could be to make list items draggable and organisable. Add ability to have tabs of seperate todo lists.</p>
+            <p>Add additional sign in methods, add ability to delete messages, add more features similar to discord (ability to create own communities).</p>
         </div>
     </div>
-
 
 
     <div class="a4 hidden">
@@ -161,7 +160,7 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with the vue framework, firebase realtime database and hosting, javascript, css, and html.</p>
+            <p>This app is built with the <span style="color: #64b586">vue framework</span>, firebase realtime database and hosting, javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
             <p>This app needs several improvements: top priority is to optimise the database loading and access - i want to perhaps only load the database to client side once and store in a clientside indexDB (looking into using localforage for an indexDB approach),
@@ -169,7 +168,6 @@ onMount(() => {
             </p>
         </div>
     </div>
-
 
 
     <div class="a5 hidden">
@@ -199,13 +197,12 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with the svelte framework, javascript, css, and html.</p>
+            <p>This app is built with the <span style="color: #eb5027">svelte framework</span>, javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
             <p>I need to make newly added graphs individualistic.</p>
         </div>
     </div>
-
 
 
     <div class="a6 hidden">
@@ -224,47 +221,47 @@ onMount(() => {
             </div>
 
             <h3>Description</h3>
-            <p>A simple tetris clone. Arrow keys to move, rotate, and drop faster.</p>
+            <p>A simple tetris clone. Arrow keys to move, rotate, and drop faster. The app features a score system and 10 levels.
+                After progressing to each next level the tetrominoes drop faster, increasing the difficulty.
+            </p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with javascript, css, and html.</p>
+            <p>This app is built with <span style="color: #eddc67">javascript</span>, css, and html.</p>
         </div>
     </div>
 
 
-
     <div class="a7 hidden">
-        <iframe src="https://tasmankingsley.github.io/new-tab/" width="360" height="700"></iframe>
+        <iframe src="https://tasmankingsley.github.io/todo/" width="360" height="700"></iframe>
     </div>
 
     <div class="content c7 hidden">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
-            <h2>New tab - customisable home page</h2>
+            <h2>Minimal to-do list</h2>
 
             <div class="link-div">
                 <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
-                <a href="https://tasmankingsley.github.io/new-tab/">Web link</a>
+                <a href="https://tasmankingsley.github.io/todo/">Web link</a>
                 <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
-                <a href="https://github.com/tasmankingsley/new-tab">Github repo</a>
+                <a href="https://github.com/tasmankingsley/todo">Github repo</a>
             </div>
 
             <h3>Description</h3>
-            <p>Designed to be set as a home page or new tab page, intended for displaying and 
-                customising favourite links/bookmarks.
+            <p>A minimal to-do list app. The user can input to-do items and check off the items
+                when completed. The app features the ability to edit and remove the list items.
+                The user's list will also be saved in browser local storage for the ability to
+                return to list after closinng the page.
             </p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with the svelte framework, javascript, css, and html.</p>
+            <p>This app is built with the <span style="color: #eb5027">svelte framework</span>, javascript, css, and html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>I want to make the icons draggable, to easily re-arrange the order without needing to delete and add again.
-                Improve customisability (eg. change background colour, image, and edit already existing icon links).
-            </p>
+            <p>Possible improvemnts could be to make list items draggable and organisable. Add ability to have tabs of seperate todo lists.</p>
         </div>
     </div>
 
 
-    
     <div class="a8 hidden">
         <iframe src="https://tasmankingsley.github.io/calc/" width="280" height="350"></iframe>
     </div>
@@ -286,7 +283,38 @@ onMount(() => {
             </p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with javascript, css, and html.</p>
+            <p>This app is built with <span style="color: #eddc67">javascript</span>, css, and html.</p>
+        </div>
+    </div>
+
+
+    <div class="a9 hidden">
+        <iframe src="https://tasmankingsley.github.io/new-tab/" width="360" height="700"></iframe>
+    </div>
+
+    <div class="content c9 hidden">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+            <h2>New tab - customisable home page</h2>
+
+            <div class="link-div">
+                <img src={$dark_mode ? "./images/link-light.png" : "./images/link.png"} alt="">
+                <a href="https://tasmankingsley.github.io/new-tab/">Web link</a>
+                <img src={$dark_mode ? "./images/github-light.png" : "./images/github.png"} alt="">
+                <a href="https://github.com/tasmankingsley/new-tab">Github repo</a>
+            </div>
+
+            <h3>Description</h3>
+            <p>Designed to be set as a home page or new tab page, intended for displaying and 
+                customising favourite links/bookmarks.
+            </p>
+
+            <h3>Technology stack</h3>
+            <p>This app is built with the <span style="color: #eb5027">svelte framework</span>, javascript, css, and html.</p>
+
+            <h3>Future considerations and implementations</h3>
+            <p>I want to make the icons draggable, to easily re-arrange the order without needing to delete and add again.
+                Improve customisability (eg. change background colour, image, and edit already existing icon links).
+            </p>
         </div>
     </div>
 
@@ -305,7 +333,8 @@ onMount(() => {
                             'a5''c5'
                             'a6''c6'
                             'a7''c7'
-                            'a8''c8';
+                            'a8''c8'
+                            'a9''c9';
     column-gap: 20px;
     row-gap: 20px;
     justify-items: center;
@@ -325,6 +354,7 @@ onMount(() => {
 .a6 { grid-area: a6; }
 .a7 { grid-area: a7; }
 .a8 { grid-area: a8; }
+.a9 { grid-area: a9; }
 .c1 { grid-area: c1; }
 .c2 { grid-area: c2; }
 .c3 { grid-area: c3; }
@@ -333,6 +363,7 @@ onMount(() => {
 .c6 { grid-area: c6; }
 .c7 { grid-area: c7; }
 .c8 { grid-area: c8; }
+.c9 { grid-area: c9; }
 
 h2 {
     font-size: 1.5rem;
@@ -350,6 +381,10 @@ iframe {
 
 img {
     width: 20px;
+}
+
+.hyprcht-img {
+    width: 375px;
 }
 
 .link-div {
@@ -385,7 +420,8 @@ img {
                             'a5 c5'
                             'c6 a6'
                             'a7 c7'
-                            'c8 a8';
+                            'c8 a8'
+                            'a9 c9';
         row-gap: 100px;
     }
 

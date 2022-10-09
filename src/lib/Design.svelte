@@ -91,7 +91,9 @@ function display(src) {
     </div>
 
 
-    <iframe src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img class="img jimg" src="./images/jamingle-layout.jpg" on:click={() => display("./images/jamingle-layout.jpg")} alt="">
+
+    <iframe class="jvid" src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <div class="jamingle content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
@@ -107,7 +109,9 @@ function display(src) {
         </div>
     </div>
 
-    <iframe src="https://www.youtube.com/embed/jPtX_QU5gz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img class="img himg" src="./images/hidoge-layout.jpg" on:click={() => display("./images/hidoge-layout.jpg")} alt="">
+
+    <iframe class="hvid" src="https://www.youtube.com/embed/jPtX_QU5gz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <div class="hidoge content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
@@ -161,8 +165,10 @@ function display(src) {
                         'p1'
                         'p2'
                         'prototypes'
+                        'jimg'
                         'jvid'
                         'jcont'
+                        'himg'
                         'hvid'
                         'hcont'
                         'journal'
@@ -243,6 +249,30 @@ span {
     grid-area: pcont;
 }
 
+.jamingle {
+    grid-area: jcont;
+}
+
+.hidoge {
+    grid-area: hcont;
+}
+
+.jimg {
+    grid-area: jimg;
+}
+
+.himg {
+    grid-area: himg;
+}
+
+.jvid {
+    grid-area: jvid;
+}
+
+.hvid {
+    grid-area: hvid;
+}
+
 .journal  {
     grid-area: journal;
 }
@@ -305,8 +335,10 @@ blockquote {
                             'pcont pcont'
                             'p1 p2'
                             'prototypes prototypes'
+                            'jimg jcont'
                             'jvid jcont'
-                            'hvid hcont'
+                            'hcont himg'
+                            'hcont hvid'
                             'journal journal'
                             'journal-img journal-img';
         row-gap: 40px;
