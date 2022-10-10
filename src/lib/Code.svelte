@@ -153,18 +153,21 @@ onMount(() => {
 
             <h3>Description</h3>
             <p>A Japanese dictionary web app. Inspired by the Shirabe Jisho and 'Japanese' apps on the IOS app store. This web app primarily leverages
-                the JMdict file, a database file created by Jim Breen and the Electronic Dictionary Research and Development Group (EDRDG).
+                the JMdict file, a database file created by Jim Breen and the Electronic Dictionary Research and Development Group (EDRDG).</p>
+            <p>
                 I have designed this app so the user can search the dictionary database with english words in order to find the Japanese equivalent/translation.
-                The app also features: a word list section to browse through words in the database, a kana table for reference to the hiragana and katakana syllabaries, 
+                The app also features: a word list section to browse through words in the database, a togglable kana table for reference to the hiragana and katakana syllabaries, 
                 and a kanji list to reference the most common kanji ordered by grade.
             </p>
+            <p>This app has now been improved using localforage, to only load the database once (from firebase) to a clientside indexDB.</p>
+            <p>Please note - the first database load takes a little long because the file is ~35mb (this needs to be optimised).</p>
 
             <h3>Technology stack</h3>
-            <p>This app is built with the <span style="color: #64b586">vue framework</span>, firebase realtime database and hosting, javascript, css, and html.</p>
+            <p>This app is built with the <span style="color: #64b586">vue framework</span>, firebase realtime database and hosting, localforage library, javascript, css, html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>This app needs several improvements: top priority is to optimise the database loading and access - i want to perhaps only load the database to client side once and store in a clientside indexDB (looking into using localforage for an indexDB approach),
-                to make the kanji list searchable, add ability to search in with Japanese characters, add better word lists (eg. include JLPT lists).
+            <p>Things to improve: i need to optimise the initial database load (maybe an asynchronous load from home page rather than first use - to prevent waiting),
+                to make the kanji list searchable, add ability to search with Japanese characters instead of just english, add better word lists (eg. JLPT lists).
             </p>
         </div>
     </div>
