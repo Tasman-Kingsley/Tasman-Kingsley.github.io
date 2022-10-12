@@ -10,9 +10,10 @@
 
     <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
         <span style="padding-top: 30px;">About me</span>
-        <p>Hello fellow human! My name is Tasman. <br><br>
-            I am a Web Developer and Interaction Designer.<br>
-            I am mostly self-taught, although i have completed various programming and design subjects throughout my university education too.<br><br>
+        <p>Hello fellow being! My name is Tasman. <br><br>
+            I am a Web Developer and Interaction Designer.<br> 
+            My journey of becoming a developer/designer has spanned a number of years, but i have really focused and been driven for the past 1-2 years.
+            My programming skills are mostly self-taught, although i have completed various programming and design subjects while pursuing a Masters of Interaction Design, and earlier doing a semester in Computer Science (prior to completing my Bachelor's in Biotechology).<br><br>
             Thank you for finding your way to my portfolio page. Be sure to hang around and take a look at my projects if you'd like.<br>
             I appreciate your time and curiosity.<br><br>
             You can contact me at <a href="mailto: tasman.wilcock@gmail.com" style="color: #78b2aa;">tasman.wilcock@gmail.com</a></p><br>

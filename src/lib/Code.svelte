@@ -253,7 +253,7 @@ onMount(() => {
             <p>A minimal to-do list app. The user can input to-do items and check off the items
                 when completed. The app features the ability to edit and remove the list items.
                 The user's list will also be saved in browser local storage for the ability to
-                return to list after closinng the page.
+                return to list after closing the page.
             </p>
 
             <h3>Technology stack</h3>
