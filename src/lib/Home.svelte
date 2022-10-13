@@ -74,6 +74,7 @@ p {
     border-radius: 15px;
     cursor: pointer;
     opacity: 0.8;
+    transition: all 0.5s;
 }
 
 .img:hover {
@@ -93,6 +94,7 @@ p {
     display: flex;
     place-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
 
 span {
@@ -108,6 +110,10 @@ span {
     }
     .img {
         height: 300px;
+    }
+
+    .img:hover {
+        padding: 0px 5px;
     }
 }
 
