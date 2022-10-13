@@ -114,6 +114,7 @@ span {
 
     .img:hover {
         padding: 0px 5px;
+        border-radius: 20px;
     }
 }
 
