@@ -68,7 +68,7 @@ p {
 .img {
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: #191a21;
     width: 100%;
     height: 200px;
     border-radius: 15px;
