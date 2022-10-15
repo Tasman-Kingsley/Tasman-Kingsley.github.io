@@ -114,7 +114,7 @@ function toggle_mode() {
 
 <style>
 :global(body.dark) {
-  background-color: #1e1f29;
+  background-color: #16161d;
   color: white;
   background-position: cover;
   background-attachment: fixed;
@@ -135,7 +135,6 @@ function toggle_mode() {
   right: 7px;
   background-color: #eee;
   border-radius: 3px;
-  /* opacity: 0.9; */
 }
 
 
@@ -229,12 +228,13 @@ span:hover {
   line-height: 50px;
   background-color: none;
   border-radius: 2px;
-  opacity: 0.9;
+  opacity: 1;
   cursor: pointer;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 2;
+  color: #1e1f29;
 }
 
 .content {
