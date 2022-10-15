@@ -147,7 +147,7 @@ span:hover {
   height: 100%;
   width: 100%;
   position: fixed;
-  background-color: #b2c6d3;
+  background-color: #7e9ec7;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
