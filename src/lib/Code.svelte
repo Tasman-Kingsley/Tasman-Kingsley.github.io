@@ -67,11 +67,11 @@ onMount(() => {
     </div>
 
 
-    <div class="a2 hidden">
+    <div class="a3 hidden">
         <iframe src="https://kana-kuizu.web.app" width="360" height="700"></iframe>
     </div>
     
-    <div class="content c2 hidden">
+    <div class="content c3 hidden">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Kana quiz app</h2>
 
@@ -103,14 +103,14 @@ onMount(() => {
     </div>
 
 
-    <div class="a3 hidden">
+    <div class="a4 hidden">
         <a href="https://hyprcht.web.app/">
             <img class="hyprcht-img" src="./images/hyperchat.png" alt="hyperchat image"/>
             <!-- <iframe src="https://hyprcht.web.app/" width="360" height="700"></iframe> -->
         </a>
     </div>
 
-    <div class="content c3 hidden">
+    <div class="content c4 hidden">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Messaging app</h2>
 
@@ -136,11 +136,11 @@ onMount(() => {
     </div>
 
 
-    <div class="a4 hidden">
+    <div class="a2 hidden">
         <iframe src="https://japanesejisho.web.app" width="360" height="700"></iframe>
     </div>
 
-    <div class="content c4 hidden">
+    <div class="content c2 hidden">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Japanese dictionary app</h2>
 
