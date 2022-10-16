@@ -160,13 +160,12 @@ onMount(() => {
                 and a kanji list to reference the most common kanji ordered by grade.
             </p>
             <p>This app has now been improved using localforage, to only load the database once (from firebase) to a clientside indexDB.</p>
-            <p>Please note - the first database load takes a little long because the file is ~35mb (this needs to be optimised).</p>
 
             <h3>Technology stack</h3>
             <p>This app is built with the <span style="color: #64b586">vue framework</span>, firebase realtime database and hosting, localforage library, javascript, css, html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>Things to improve: i need to optimise the initial database load (maybe an asynchronous load from home page rather than first use - to prevent waiting),
+            <p>Things to improve: i need to optimise the initial database load (maybe an asynchronous load on-mount rather than first call - to prevent waiting),
                 to make the kanji list searchable, add ability to search with Japanese characters instead of just english, add better word lists (eg. JLPT lists).
             </p>
         </div>
