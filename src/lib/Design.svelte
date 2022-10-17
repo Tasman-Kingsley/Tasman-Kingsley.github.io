@@ -4,6 +4,18 @@ import { dark_mode } from "./store"
 
 window.scrollTo(0, 0);
 
+let y;
+
+let hover = false;
+
+function hovering() {
+    hover = true;
+}
+
+function not_hovering() {
+    hover = false;
+}
+
 let display_img = {
     src: '',
     visible: false
@@ -14,16 +26,27 @@ function display(src) {
     display_img.visible = true;
 }
 
+function scroll_to({ target }) {
+    const element = document.querySelector(target.getAttribute('href'));
+    if (!element) return;
+    
+    element.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 </script>
+
+<svelte:window bind:scrollY={y}/>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
     <div class="design content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-1" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Design Thinking and User Experience Design (UxD)</h2>
-            <h3>My thoughts on design</h3>
+            <h3 id="section-2">My thoughts on design</h3>
             <p>Design is about discovering someone’s needs or desires (sometimes unbeknownst to them), using your empathy, openness, sensitivity, and psychological understanding to help fulfil their needs/desires through creativity, intuition, ideation, and the design thinking iterative process.</p>
             
-            <h3>Design thinking</h3>
+            <h3 id="section-3">Design thinking</h3>
             <p>Design thinking is a process and a mindset to approach designing and innovating products or services for people.
                 There are many different design approaches and design philosophies. The approaches i have learnt were taught to me in University while studying Interaction Design, and these ideas were
                 very much influenced by Don Norman, who is considered by many to be the father of Human Centered Design (HCD) - he also coined the term 'User Experience'.<br><br>
@@ -34,7 +57,7 @@ function display(src) {
                     Engineering design tends to emphasize reliability, cost, and efficiency. The focus of this book, and of the discipline called human-centered design, is to ensure that the result fits human desires, needs, and capabilities. 
                     After all, why do we make products? We make them for people to use.”</blockquote>
 
-            <h3>User experience design</h3>
+            <h3 id="section-4">User experience design</h3>
             <p>UxD is an ambiguous term because it can mean different design approaches to different people. After learning some of the history and reading the progression of design in the book 'Interaction Design: Beyond Human-Computer Interaction' by Sharp, Preece, and Rogers, 
                 it begins to make sense as to why there is some confusion around this term. UxD can mean any one of the following depending on who you ask: Interaction Design (IxD), Human Centered Design (HCD), User Centered Design (UCD), Experience Centered Design (ECD), or Paticipatory Design (PD).
             </p>
@@ -43,7 +66,7 @@ function display(src) {
                 Whereas UCD is more focused on understanding the psychology of people, and tailoring the design of the product to work more efficiently with the person, often prioritising user engagement and seamless usability. My Uni subjects focused on putting into practice IxD/HCD and ECD primarily.
             </p>
 
-            <h3>The common design approach</h3>
+            <h3 id="section-5">The common design approach</h3>
             <p>
             The design approaches i have learnt usually encorporate the five phases of design thinking - 1. Empathize, 2. Define, 3. Ideate, 4. Prototype, and 5. Test. These phases are iterated over until a suitable design is created and implemented.
             There are several design tools that are widely used for each phase in the process. I have practiced all methods mentioned below in my uni design subjects: Fundamentals of Interaction Design and Experience Centered Design.
@@ -55,9 +78,27 @@ function display(src) {
             <ul><span>5. Test: </span>Taking the prototypes and testing them with the user base, and communicating the design with the team eg. in video edits. Testing almost always results in needing to go back and iterate over the previous phases to revise the design (as required) based on user feedback, before the prototype becomes production ready.</ul>
 
         </div>
+
+        <div class="contents-container">
+            <div class="table-of-contents" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'}; width: {y <= 1100 || hover === true ? '300px' : '0px'};"
+            on:mouseenter={hovering} on:mouseleave={not_hovering}>
+                <h2>Contents</h2>
+                <a href="#section-1" on:click|preventDefault={scroll_to}>Design Thinking and UxD</a>
+                <span> <a href="#section-2" on:click|preventDefault={scroll_to}>My thoughts on design</a></span>
+                <span>- <a href="#section-3" on:click|preventDefault={scroll_to}>Design thinking</a></span>
+                <span>- <a href="#section-4" on:click|preventDefault={scroll_to}>User experience design</a></span>
+                <span>- <a href="#section-5" on:click|preventDefault={scroll_to}>The common design approach</a></span>
+                <a href="#section-6" on:click|preventDefault={scroll_to}>Affinity Diagramming</a>
+                <a href="#section-7" on:click|preventDefault={scroll_to}>Personas</a>
+                <a href="#section-8" on:click|preventDefault={scroll_to}>Prototypes</a>
+                <span>- <a href="#section-9" on:click|preventDefault={scroll_to}>Jamingle prototype</a></span>
+                <span>- <a href="#section-10" on:click|preventDefault={scroll_to}>HiDoge prototype</a></span>
+                <a href="#section-11" on:click|preventDefault={scroll_to}>Design Principles Journal</a>
+            </div>
+        </div>
     </div>
 
-    <img class="img affinity-img" src="./images/affinity.jpg" on:click={() => display("./images/affinity.jpg")} alt="">
+    <img id="section-6" class="img affinity-img" src="./images/affinity.jpg" on:click={() => display("./images/affinity.jpg")} alt="">
 
     <div class="affinity content">
         <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
@@ -68,7 +109,7 @@ function display(src) {
     </div>
 
     <div class="personas content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-7" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Personas</h2>
             <p>Personas are one of the tools or methods that can be used in the process of design thinking. 
                 They are often used early on in the empathise-define phase, and are used to empathise with and humanise the people in which we are designing for.
@@ -81,7 +122,7 @@ function display(src) {
     <img class="img p2" src="./images/persona-final.png" on:click={() => display("./images/persona-final.png")} alt="">
     
     <div class="prototypes content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-8" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Prototypes</h2>
             <p>Prototypes are another tool in the design toolbelt, and are used in the prototyping and testing phase. 
                 Below are two examples of hi-fi prototypes which i have created.
@@ -91,7 +132,7 @@ function display(src) {
     </div>
 
 
-    <img class="img jimg" src="./images/jamingle-layout.jpg" on:click={() => display("./images/jamingle-layout.jpg")} alt="">
+    <img id="section-9" class="img jimg" src="./images/jamingle-layout.jpg" on:click={() => display("./images/jamingle-layout.jpg")} alt="">
 
     <iframe class="jvid" src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
@@ -109,7 +150,7 @@ function display(src) {
         </div>
     </div>
 
-    <img class="img himg" src="./images/hidoge-layout.jpg" on:click={() => display("./images/hidoge-layout.jpg")} alt="">
+    <img id="section-10" class="img himg" src="./images/hidoge-layout.jpg" on:click={() => display("./images/hidoge-layout.jpg")} alt="">
 
     <iframe class="hvid" src="https://www.youtube.com/embed/jPtX_QU5gz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
@@ -125,7 +166,7 @@ function display(src) {
 
 
     <div class="journal content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-11" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
             <h2>Design Principles Journal</h2>
             <p>Here is an example of a 'journal entry' which is a tool used to analyse the underlying design principles of a design. I chose to analyse the Spotify IOS app for this journal. I used a combination of Gestalt principles, Jakob Nielsen's usability heuristics, and fundamental
                 psychological concepts of interaction as outlined my Don Norman, including: affordances, signifiers, constraints, mappings, feedback, and visibility.
@@ -223,7 +264,34 @@ span {
 
 .design {
     grid-area: design;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
 }
+
+.contents-container {
+    height: 100%;
+}
+
+.table-of-contents {
+    display: grid;
+    position: fixed;
+    right: 0px;
+    grid-template-rows: 80px repeat(11, 50px);
+    width: 300px;
+    height: max-content;
+    border-radius: 10px;
+    text-indent: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    transition: width 0.5s;
+    padding-right: 10px;
+}
+
+a {
+    width: 300px;
+}
+
 
 .affinity {
     grid-area: affinity;
@@ -346,6 +414,9 @@ blockquote {
     .content {
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .design {
+        grid-template-columns: 1fr 300px;
     }
     .journal-img {
         grid-template-columns: repeat(4, 1fr);
