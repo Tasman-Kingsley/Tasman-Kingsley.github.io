@@ -6,6 +6,7 @@ window.scrollTo(0, 0);
 
 let y;
 
+// let toc = true;
 let hover = false;
 
 function hovering() {
@@ -40,9 +41,10 @@ function scroll_to({ target }) {
 <svelte:window bind:scrollY={y}/>
 
 <div class="grid" in:fly={{x: -400, duration: 500}}>
+    <!-- <span class="toc-toggle" style="color: {$dark_mode ? '#fff' : '#1e1f29'}; background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">𝌑</span> -->
     <div class="design content">
         <div id="section-1" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
-            <h2>Design Thinking and User Experience Design (UxD)</h2>
+            <h2>Design Thinking and User Experience Design (UXD)</h2>
             <h3 id="section-2">My thoughts on design</h3>
             <p>Design is about discovering someone’s needs or desires (sometimes unbeknownst to them), using your empathy, openness, sensitivity, and psychological understanding to help fulfil their needs/desires through creativity, intuition, ideation, and the design thinking iterative process.</p>
             
@@ -58,8 +60,8 @@ function scroll_to({ target }) {
                     After all, why do we make products? We make them for people to use.”</blockquote>
 
             <h3 id="section-4">User experience design</h3>
-            <p>UxD is an ambiguous term because it can mean different design approaches to different people. After learning some of the history and reading the progression of design in the book 'Interaction Design: Beyond Human-Computer Interaction' by Sharp, Preece, and Rogers, 
-                it begins to make sense as to why there is some confusion around this term. UxD can mean any one of the following depending on who you ask: Interaction Design (IxD), Human Centered Design (HCD), User Centered Design (UCD), Experience Centered Design (ECD), or Paticipatory Design (PD).
+            <p>UXD is an ambiguous term because it can mean different design approaches to different people. After learning some of the history and reading the progression of design in the book 'Interaction Design: Beyond Human-Computer Interaction' by Sharp, Preece, and Rogers, 
+                it begins to make sense as to why there is some confusion around this term. UXD can mean any one of the following depending on who you ask: Interaction Design (IxD), Human Centered Design (HCD), User Centered Design (UCD), Experience Centered Design (ECD), or Paticipatory Design (PD).
             </p>
             <p>
                 Many of these overlap but can have vastly different philosophies and values. For instance, ECD focuses on empathising with and genuinely trying to understand the hopes and desires of people, before trying to design meaningful experiences for people, with an emphasis on the experience. 
@@ -83,7 +85,7 @@ function scroll_to({ target }) {
             <div class="table-of-contents" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'}; width: {y <= 1100 || hover === true ? '300px' : '0px'};"
             on:mouseenter={hovering} on:mouseleave={not_hovering}>
                 <h2>Contents</h2>
-                <a href="#section-1" on:click|preventDefault={scroll_to}>Design Thinking and UxD</a>
+                <a href="#section-1" on:click|preventDefault={scroll_to}>Design Thinking and UXD</a>
                 <span> <a href="#section-2" on:click|preventDefault={scroll_to}>My thoughts on design</a></span>
                 <span>- <a href="#section-3" on:click|preventDefault={scroll_to}>Design thinking</a></span>
                 <span>- <a href="#section-4" on:click|preventDefault={scroll_to}>User experience design</a></span>
@@ -271,6 +273,17 @@ span {
 
 .contents-container {
     height: 100%;
+}
+
+.toc-toggle {
+    position: fixed;
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    top: 80px;
+    font-size: 30px;
+    z-index: 10;
+    cursor: pointer;
+    padding-right: 5px;
 }
 
 .table-of-contents {
