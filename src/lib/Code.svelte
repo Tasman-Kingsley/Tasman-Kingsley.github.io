@@ -90,7 +90,7 @@ onMount(() => {
             <p>
                 The quiz presents a randomized grid of the kana, and invites the user to remember
                 the kana and input the corresponding romaji. For example: for the hiragana 'か' you would input 'ka' and press enter for a correct answer. 
-                The app will renforce learning and memory by validating the input and giving color feedback to the user for correct/incorrect answers. 
+                The app will reenforce learning and memory by validating the input and giving color feedback to the user for correct/incorrect answers. 
                 For reference for all the kana, please view my other app 'Japanese Jisho' below, they work well together as a study tool.
             </p>
             <p>
