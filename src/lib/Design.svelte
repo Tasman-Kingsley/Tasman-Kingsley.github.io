@@ -86,7 +86,7 @@ function scroll_to({ target }) {
             on:mouseenter={hovering} on:mouseleave={not_hovering}>
                 <h2>Contents</h2>
                 <a href="#section-1" on:click|preventDefault={scroll_to}>Design Thinking and UXD</a>
-                <span> <a href="#section-2" on:click|preventDefault={scroll_to}>My thoughts on design</a></span>
+                <span>- <a href="#section-2" on:click|preventDefault={scroll_to}>My thoughts on design</a></span>
                 <span>- <a href="#section-3" on:click|preventDefault={scroll_to}>Design thinking</a></span>
                 <span>- <a href="#section-4" on:click|preventDefault={scroll_to}>User experience design</a></span>
                 <span>- <a href="#section-5" on:click|preventDefault={scroll_to}>The common design approach</a></span>
