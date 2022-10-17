@@ -293,7 +293,7 @@ span {
     grid-template-rows: 80px repeat(11, 50px);
     width: 300px;
     height: max-content;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     text-indent: 20px;
     padding-bottom: 20px;
     align-items: center;
