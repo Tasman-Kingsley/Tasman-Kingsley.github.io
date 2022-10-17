@@ -157,16 +157,14 @@ onMount(() => {
             <p>
                 I have designed this app so the user can search the dictionary database with english words in order to find the Japanese equivalent/translation.
                 The app also features: a word list section to browse through words in the database, a togglable kana table for reference to the hiragana and katakana syllabaries, 
-                and a kanji list to reference the most common kanji ordered by grade.
-            </p>
-            <p>This app has now been improved using localforage, to only load the database once (from firebase) to a clientside indexDB.</p>
+                and a kanji list to reference the most common kanji ordered by stroke count. This app loads the database file once from firebase, and is stored on a clientside localforage indexDB.</p>
 
             <h3>Technology stack</h3>
             <p>This app is built with the <span style="color: #64b586">vue framework</span>, firebase realtime database and hosting, localforage library, javascript, css, html.</p>
 
             <h3>Future considerations and implementations</h3>
-            <p>Things to improve: i need to optimise the initial database load (maybe an asynchronous load on-mount rather than first call - to prevent waiting),
-                to make the kanji list searchable, add ability to search with Japanese characters instead of just english, add better word lists (eg. JLPT lists).
+            <p>I would like to: optimise the initial database load (immediate async load),
+                 make the kanji list searchable, make searchable with Japanese characters, and add better word lists (eg. JLPT).
             </p>
         </div>
     </div>
