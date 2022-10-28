@@ -158,9 +158,9 @@ span:hover {
   z-index: 2;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 450px) {
   .nav {
-    width: 420px;
+    width: 450px;
     right: 0;
   }
   .header {

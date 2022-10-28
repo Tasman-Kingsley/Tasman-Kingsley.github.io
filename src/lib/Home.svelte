@@ -1,10 +1,12 @@
 <script>
-import { nav, title } from './store.js';
+import { nav, title, dark_mode } from './store.js';
 import { fly } from 'svelte/transition';
 import card_1 from '../assets/apps.jpg';
 import card_2 from '../assets/giddy-grocery.jpg';
 import card_3 from '../assets/persona-collage.jpg';
 import card_4 from '../assets/waves.jpeg';
+import dark from  '../assets/background-dark.png';
+import light from  '../assets/background-light.png';
 
 window.scrollTo(0, 0);
 
@@ -19,7 +21,8 @@ function toggle(num) {
 </script>
 
 <div class="outer-grid" in:fly={{x: -400, duration: 500}}>
-    <div>
+    <div class="intro" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'}; 
+    background-image: {$dark_mode ? `url(${dark})` : `url(${light})`};">
         <p>Hello, Tasman here. This is my portfolio page. <br>
             Please feel free to browse my projects if you like 😊
         </p>
@@ -47,19 +50,30 @@ function toggle(num) {
 .outer-grid {
     display: grid;
     grid-auto-flow: row;
-    height: 100%;
+    grid-template-rows: 100px 8fr;
+    height: calc(100vh - 90px);
     width: 100%;
     text-align: center;
     row-gap: 20px;
 }
 
+.intro {
+    display: grid;
+    place-content: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 p {
-    /* font-size: 1rem; */
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .inner-grid {
     display: grid;
     grid-auto-flow: row;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     gap: 20px;
     place-items: center;
@@ -70,7 +84,7 @@ p {
     background-repeat: no-repeat;
     background-color: #191a21;
     width: 100%;
-    height: 200px;
+    height: 100%;
     border-radius: 15px;
     cursor: pointer;
     opacity: 0.8;
@@ -86,7 +100,7 @@ p {
 }
 
 .card-txt {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 200;
     opacity: 1;
     height: 100%;
@@ -104,17 +118,33 @@ span {
     opacity: 0.9;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
     .inner-grid {
         grid-template-columns: 1fr 1fr;
+        height: calc(100vh - 60px - 120px);
     }
     .img {
-        height: 300px;
+        height: calc((100vh - 230px)/2);
     }
 
     .img:hover {
         padding: 0px 5px;
         border-radius: 20px;
+    }
+
+    .card-txt {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 380px) {
+    .card-txt {
+        font-size: 1.8rem;
     }
 }
 
