@@ -32,7 +32,7 @@ onMount(() => {
     </div>
 
     <div class="content c1">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Podcast app</h2>
 
             <div class="link-div">
@@ -72,7 +72,7 @@ onMount(() => {
     </div>
     
     <div class="content c2 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Kana quiz app</h2>
 
             <div class="link-div">
@@ -111,7 +111,7 @@ onMount(() => {
     </div>
 
     <div class="content c4 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Messaging app</h2>
 
             <div class="link-div">
@@ -141,7 +141,7 @@ onMount(() => {
     </div>
 
     <div class="content c3 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Japanese dictionary app</h2>
 
             <div class="link-div">
@@ -175,7 +175,7 @@ onMount(() => {
     </div>
     
     <div class="content c5 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Github-style consistency graph</h2>
 
             <div class="link-div">
@@ -210,7 +210,7 @@ onMount(() => {
     </div>
 
     <div class="content c6 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Tetris clone</h2>
 
             <div class="link-div">
@@ -236,7 +236,7 @@ onMount(() => {
     </div>
 
     <div class="content c7 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Minimal to-do list</h2>
 
             <div class="link-div">
@@ -267,7 +267,7 @@ onMount(() => {
     </div>
 
     <div class="content c8 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Simple calculator</h2>
 
             <div class="link-div">
@@ -293,7 +293,7 @@ onMount(() => {
     </div>
 
     <div class="content c9 hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>New tab - customisable home page</h2>
 
             <div class="link-div">

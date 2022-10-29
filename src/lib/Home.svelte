@@ -21,8 +21,7 @@ function toggle(num) {
 </script>
 
 <div class="outer-grid" in:fly={{x: -400, duration: 500}}>
-    <div class="intro" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'}; 
-    background-image: {$dark_mode ? `url(${dark})` : `url(${light})`};">
+    <div class="intro" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
         <p>Hello, Tasman here. This is my portfolio page. <br>
             Please feel free to browse my projects if you like 😊
         </p>
@@ -54,15 +53,17 @@ function toggle(num) {
     height: calc(100vh - 90px);
     width: 100%;
     text-align: center;
-    row-gap: 20px;
+    row-gap: 15px;
 }
 
 .intro {
     display: grid;
     place-content: center;
     border-radius: 15px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: max-content;
+    place-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 p {
@@ -77,6 +78,7 @@ p {
     grid-template-columns: 1fr;
     gap: 20px;
     place-items: center;
+    height: calc(100vh - 205px);
 }
 
 .img {
@@ -87,7 +89,6 @@ p {
     height: 100%;
     border-radius: 15px;
     cursor: pointer;
-    opacity: 0.8;
     transition: all 0.5s;
 }
 
@@ -121,10 +122,11 @@ span {
 @media (min-width: 750px) {
     .inner-grid {
         grid-template-columns: 1fr 1fr;
-        height: calc(100vh - 60px - 120px);
+        grid-template-rows: 1fr 1fr;
+        height: calc(100vh - 225px);
     }
     .img {
-        height: calc((100vh - 230px)/2);
+        height: calc((100vh - 225px)/2);
     }
 
     .img:hover {

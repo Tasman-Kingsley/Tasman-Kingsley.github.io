@@ -81,7 +81,7 @@ function toggle_mode() {
     </div>
   {/if}
   
-  <div class="header"  style="background-color: {!$dark_mode ? '#eee' : '#191a22'}; color: {!$dark_mode ? '#1e1f29' : '#eee'}; opacity: {$nav[0].visible ? 0.4 : 1};"
+  <div class="header"  style="background-color: {!$dark_mode ? '#eee' : '#191a22'}; color: {!$dark_mode ? '#1e1f29' : '#eee'}; opacity: {$nav[0].visible ? 0.4 : 0.9};"
   on:click={() => $nav[0].visible = false}>
 
     <span class="title">{$title}</span>

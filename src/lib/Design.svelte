@@ -43,7 +43,7 @@ function scroll_to({ target }) {
 <div class="grid" in:fly={{x: -400, duration: 500}}>
     <!-- <span class="toc-toggle" style="color: {$dark_mode ? '#fff' : '#1e1f29'}; background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">𝌑</span> -->
     <div class="design content">
-        <div id="section-1" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-1" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Design Thinking and User Experience Design (UXD)</h2>
             <h3 id="section-2">My thoughts on design</h3>
             <p>Design is about discovering someone’s needs or desires (sometimes unbeknownst to them), using your empathy, openness, sensitivity, and psychological understanding to help fulfil their needs/desires through creativity, intuition, ideation, and the design thinking iterative process.</p>
@@ -82,7 +82,7 @@ function scroll_to({ target }) {
         </div>
 
         <div class="contents-container">
-            <div class="table-of-contents" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'}; width: {y <= 1100 || hover === true ? '300px' : '0px'};"
+            <div class="table-of-contents" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'}; width: {y <= 1100 || hover === true ? '300px' : '0px'};"
             on:mouseenter={hovering} on:mouseleave={not_hovering}>
                 <h2>Contents</h2>
                 <a href="#section-1" on:click|preventDefault={scroll_to}>Design Thinking and UXD</a>
@@ -103,7 +103,7 @@ function scroll_to({ target }) {
     <img id="section-6" class="img affinity-img" src="./images/affinity.jpg" on:click={() => display("./images/affinity.jpg")} alt="">
 
     <div class="affinity content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Affinity Diagramming</h2>
             <p>Affinity diagramming is a design thinking tool to brainstorm with fellow designers based on user research/interview data. The purpose of the diagramming is to try to gather relevant needs, desires, and problem areas the user or target base is having.<br><br> 
                 Displayed here is an example of one of the affinity diagrams i participated in for a group project in a subject called Experience Centered Design (full disclosure - i only contributed to this diagram and do not take complete credit at all, i was using the blue post-it notes and can only take credit for them.). We used a miro board for the diagramming software.</p>
@@ -111,7 +111,7 @@ function scroll_to({ target }) {
     </div>
 
     <div class="personas content">
-        <div id="section-7" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-7" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Personas</h2>
             <p>Personas are one of the tools or methods that can be used in the process of design thinking. 
                 They are often used early on in the empathise-define phase, and are used to empathise with and humanise the people in which we are designing for.
@@ -124,7 +124,7 @@ function scroll_to({ target }) {
     <img class="img p2" src="./images/persona-final.png" on:click={() => display("./images/persona-final.png")} alt="">
     
     <div class="prototypes content">
-        <div id="section-8" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-8" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Prototypes</h2>
             <p>Prototypes are another tool in the design toolbelt, and are used in the prototyping and testing phase. 
                 Below are two examples of hi-fi prototypes which i have created.
@@ -139,7 +139,7 @@ function scroll_to({ target }) {
     <iframe class="jvid" src="https://www.youtube.com/embed/yrPmsU8TLg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <div class="jamingle content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h3>Jamingle prototype app flow</h3>
             <p>This is a prototype which i made for a group University project in a subject called Experience Centered Design.
                 The topic question my group chose was: 
@@ -157,7 +157,7 @@ function scroll_to({ target }) {
     <iframe class="hvid" src="https://www.youtube.com/embed/jPtX_QU5gz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <div class="hidoge content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h3>HiDoge prototype app flow</h3>
             <p>This is a prototype which i made for a group University project in a subject called Fundamentals of Interaction Design.
                 Similarly to the Jamingle prototype, for the HiDoge project i carried out: user research, affinity diagramming, persona creation, ideation, experience stories, story boarding, and lo-fi paper prototyping,
@@ -168,7 +168,7 @@ function scroll_to({ target }) {
 
 
     <div class="journal content">
-        <div id="section-11" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div id="section-11" class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Design Principles Journal</h2>
             <p>Here is an example of a 'journal entry' which is a tool used to analyse the underlying design principles of a design. I chose to analyse the Spotify IOS app for this journal. I used a combination of Gestalt principles, Jakob Nielsen's usability heuristics, and fundamental
                 psychological concepts of interaction as outlined my Don Norman, including: affordances, signifiers, constraints, mappings, feedback, and visibility.

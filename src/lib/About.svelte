@@ -8,7 +8,7 @@
 <div class="content-div" in:fly={{x: -400, duration: 500}}>
     <img src="./images/choco-profile.jpg" alt="">
 
-    <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+    <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
         <span style="padding-top: 30px;">About me</span>
         <p>Hello fellow being! My name is Tasman. <br><br>
             I am a Web Developer and Interaction Designer.<br> 

@@ -28,7 +28,7 @@ onMount(() => {
     </a>
 
     <div class="grid-content">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Giddy Grocery - online store</h2>
 
             <div class="link-div">
@@ -59,7 +59,7 @@ onMount(() => {
     </a>
 
     <div class="grid-content hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>This portfolio website</h2>
 
             <div class="link-div">
@@ -87,7 +87,7 @@ onMount(() => {
     </a>
 
     <div class="grid-content hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Artist website</h2>
 
             <div class="link-div">
@@ -112,7 +112,7 @@ onMount(() => {
     </a>
 
     <div class="grid-content hidden">
-        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.8)' : 'rgba(238, 238, 238, 0.8)'};">
+        <div class="card" style="background-color: {$dark_mode ? 'rgba(25, 26, 33, 0.9)' : 'rgba(238, 238, 238, 0.9)'};">
             <h2>Car rental - fake business</h2>
 
             <div class="link-div">

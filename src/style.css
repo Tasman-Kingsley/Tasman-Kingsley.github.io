@@ -10,6 +10,17 @@ body {
     padding: 0;
 }
 
+#background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#app {
+    /* z-index: 0; */
+}
+
 p {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
