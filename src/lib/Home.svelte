@@ -117,6 +117,8 @@ span {
     color: #fff;
     border-radius: 5px;
     opacity: 0.9;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 @media (min-width: 750px) {
