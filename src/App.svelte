@@ -24,14 +24,6 @@ $dark_mode = true;
 
 document.body.classList.add('dark');
 
-if (window.visualViewport.width > 500) {
-  // document.body.style.backgroundImage = `url(${dark})`;
-}
-
-// document.body.onscroll = () => {
-//     document.body.style.backgroundPositionY = `${window.scrollY}px`;
-// };
-
 // Burg toggle for nav
 function toggle_nav() {
   $nav[0].visible = !$nav[0].visible;
@@ -52,17 +44,12 @@ function toggle_mode() {
 
   if ($dark_mode === true) {
     document.body.classList.replace('light', 'dark');
-    if (window.visualViewport.width > 500) {
-      // document.body.style.backgroundImage = `url(${dark})`;
-    }
-  } 
-  else if ($dark_mode === false) {
+  } else if ($dark_mode === false) {
     document.body.classList.replace('dark', 'light');
-    if (window.visualViewport.width > 500) {
-      // document.body.style.backgroundImage = `url(${light})`;
-    }
   }
+
 }
+
 </script>
 
 <svelte:window bind:scrollY={y}/>
@@ -91,8 +78,6 @@ function toggle_mode() {
   <span class="burg" style="color: {$dark_mode ? '#fff' : '#1e1f29'};" on:click={toggle_nav}>
       {!$nav[0].visible ? '=' : '⤫'}
   </span>
-
-  <!-- <span>{y}</span> -->
   
   <div class="content" on:click={() => $nav[0].visible = false} style="opacity: {$nav[0].visible ? 0.4 : 1}">
     {#if $nav[1].visible}
@@ -116,15 +101,11 @@ function toggle_mode() {
 :global(body.dark) {
   background-color: #16161d;
   color: white;
-  /* background-position: cover;
-  background-attachment: fixed; */
 }
 
 :global(body.light) {
   background-color: white;
   color: #1e1f29;
-  /* background-position: cover;
-  background-attachment: fixed; */
 }
 
 .close {
@@ -136,8 +117,6 @@ function toggle_mode() {
   background-color: #eee;
   border-radius: 3px;
 }
-
-
 
 span:hover {
   opacity: 0.8;
